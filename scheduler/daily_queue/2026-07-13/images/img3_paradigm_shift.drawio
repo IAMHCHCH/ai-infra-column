@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="drawio-skill" version="21.0.0" type="device">
+  <diagram name="ParadigmShift" id="diag-shift-1">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="500" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="从 CPU 到 GPU 到超异构：AI 算力范式演进" style="text;html=1;align=center;fontSize=22;fontStyle=1;fontColor=#1e293b;" vertex="1" parent="1">
+          <mxGeometry x="200" y="20" width="800" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Timeline base line -->
+        <mxCell id="timeline" value="" style="endArrow=none;html=1;strokeColor=#475569;strokeWidth=3;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="80" y="260" as="sourcePoint" />
+            <mxPoint x="1120" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Era 1: CPU Era -->
+        <mxCell id="era1_dot" value="" style="ellipse;fillColor=#64748b;strokeColor=#475569;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="150" y="250" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="era1_label" value="CPU 时代&#xa;(2006 前)" style="text;html=1;align=center;fontSize=14;fontColor=#64748b;" vertex="1" parent="1">
+          <mxGeometry x="90" y="280" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="era1_box" value="通用计算&#xa;Intel Xeon / AMD Opteron&#xa;单核性能驱动" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f1f5f9;strokeColor=#64748b;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="80" y="100" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="era1_conn" value="" style="endArrow=none;html=1;strokeColor=#64748b;strokeWidth=1;dashed=1;" edge="1" parent="1" source="era1_box" target="era1_dot">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Era 2: GPU Era -->
+        <mxCell id="era2_dot" value="" style="ellipse;fillColor=#3b82f6;strokeColor=#1e40af;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="450" y="250" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="era2_label" value="GPU 时代&#xa;(2006-2020)" style="text;html=1;align=center;fontSize=14;fontColor=#1e40af;" vertex="1" parent="1">
+          <mxGeometry x="390" y="280" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="era2_box" value="并行计算&#xa;NVIDIA CUDA (2007)&#xa;Tesla / Volta / Ampere&#xa;深度学习爆发" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dbeafe;strokeColor=#3b82f6;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="380" y="100" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="era2_conn" value="" style="endArrow=none;html=1;strokeColor=#3b82f6;strokeWidth=1;dashed=1;" edge="1" parent="1" source="era2_box" target="era2_dot">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Era 3: AI Accelerator Era -->
+        <mxCell id="era3_dot" value="" style="ellipse;fillColor=#8b5cf6;strokeColor=#6b21a8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="750" y="250" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="era3_label" value="AI 加速器时代&#xa;(2020-2024)" style="text;html=1;align=center;fontSize=14;fontColor=#6b21a8;" vertex="1" parent="1">
+          <mxGeometry x="680" y="280" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="era3_box" value="专用加速&#xa;NVIDIA H100 (Hopper)&#xa;AMD MI300X&#xa;Google TPU v5&#xa;大模型训练" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3e8ff;strokeColor=#8b5cf6;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="680" y="90" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="era3_conn" value="" style="endArrow=none;html=1;strokeColor=#8b5cf6;strokeWidth=1;dashed=1;" edge="1" parent="1" source="era3_box" target="era3_dot">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Era 4: Super Heterogeneous -->
+        <mxCell id="era4_dot" value="" style="ellipse;fillColor=#10b981;strokeColor=#166534;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="250" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="era4_label" value="超异构时代&#xa;(2025+)" style="text;html=1;align=center;fontSize=14;fontColor=#166534;" vertex="1" parent="1">
+          <mxGeometry x="970" y="280" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="era4_box" value="超异构融合&#xa;GPU + NPU + DPU + CPU&#xa;Chiplet / 先进封装&#xa;NVLink-C2C / CXL&#xa;GH200 / B200" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dcfce7;strokeColor=#10b981;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="960" y="90" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="era4_conn" value="" style="endArrow=none;html=1;strokeColor=#10b981;strokeWidth=1;dashed=1;" edge="1" parent="1" source="era4_box" target="era4_dot">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Key milestones on timeline -->
+        <mxCell id="m1" value="2007&#xa;CUDA" style="text;html=1;align=center;fontSize=11;fontColor=#3b82f6;" vertex="1" parent="1">
+          <mxGeometry x="320" y="290" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="m2" value="2017&#xa;Transformer" style="text;html=1;align=center;fontSize=11;fontColor=#8b5cf6;" vertex="1" parent="1">
+          <mxGeometry x="600" y="290" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="m3" value="2022&#xa;ChatGPT" style="text;html=1;align=center;fontSize=11;fontColor=#8b5cf6;" vertex="1" parent="1">
+          <mxGeometry x="880" y="290" width="60" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Bottom insight -->
+        <mxCell id="insight" value="核心趋势：从「单芯片性能」到「系统级互联效率」——算力瓶颈已从晶体管密度转移到数据搬运带宽" style="text;html=1;align=center;fontSize=14;fontStyle=2;fontColor=#475569;" vertex="1" parent="1">
+          <mxGeometry x="100" y="380" width="1000" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Source -->
+        <mxCell id="source" value="数据来源：NVIDIA Hopper Whitepaper, IDC Worldwide AI Infrastructure Forecast 2024-2027" style="text;html=1;align=left;fontSize=11;fontColor=#94a3b8;" vertex="1" parent="1">
+          <mxGeometry x="80" y="430" width="600" height="20" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

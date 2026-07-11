@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="svga-mkt-title svga-mkt-desc">
+  <title id="svga-mkt-title">全球 AI 基础设施市场规模预测</title>
+  <desc id="svga-mkt-desc">IDC 与 Gartner 对全球 AI 基础设施市场规模的预测数据</desc>
+
+  <defs>
+    <linearGradient id="svga-mkt-bar-blue" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#1e40af"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+    <linearGradient id="svga-mkt-bar-purple" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#6b21a8"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="svga-mkt-bar-green" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#166534"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="1200" height="500" fill="#111418"/>
+
+  <!-- Title -->
+  <text x="600" y="40" text-anchor="middle" font-family="Inter, PingFang SC, Noto Sans SC, system-ui, sans-serif" font-size="32" font-weight="700" fill="#F1F5F9">
+    全球 AI 基础设施市场规模预测
+  </text>
+  <text x="600" y="65" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, system-ui, sans-serif" font-size="16" fill="#64748B">
+    数据来源：IDC Worldwide AI Infrastructure Spending Guide 2024 / Gartner Forecast 2024
+  </text>
+
+  <!-- Chart area: Y-axis -->
+  <line x1="120" y1="100" x2="120" y2="400" stroke="#2A2D35" stroke-width="2"/>
+  <!-- X-axis -->
+  <line x1="120" y1="400" x2="1080" y2="400" stroke="#2A2D35" stroke-width="2"/>
+
+  <!-- Y-axis labels -->
+  <text x="100" y="105" text-anchor="end" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#64748B">$300B</text>
+  <text x="100" y="180" text-anchor="end" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#64748B">$225B</text>
+  <text x="100" y="255" text-anchor="end" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#64748B">$150B</text>
+  <text x="100" y="330" text-anchor="end" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#64748B">$75B</text>
+  <text x="100" y="405" text-anchor="end" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#64748B">$0</text>
+
+  <!-- Grid lines -->
+  <line x1="120" y1="100" x2="1080" y2="100" stroke="#2A2D35" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="120" y1="175" x2="1080" y2="175" stroke="#2A2D35" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="120" y1="250" x2="1080" y2="250" stroke="#2A2D35" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="120" y1="325" x2="1080" y2="325" stroke="#2A2D35" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- Bar 1: 2023 -->
+  <rect x="180" y="335" width="80" height="65" fill="url(#svga-mkt-bar-blue)" rx="4"/>
+  <text x="220" y="325" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="800" fill="#3B82F6">$66B</text>
+  <text x="220" y="420" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600" fill="#94A3B8">2023</text>
+
+  <!-- Bar 2: 2024 -->
+  <rect x="360" y="295" width="80" height="105" fill="url(#svga-mkt-bar-blue)" rx="4"/>
+  <text x="400" y="285" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="800" fill="#3B82F6">$108B</text>
+  <text x="400" y="420" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600" fill="#94A3B8">2024</text>
+
+  <!-- Bar 3: 2025 (projected) -->
+  <rect x="540" y="240" width="80" height="160" fill="url(#svga-mkt-bar-purple)" rx="4"/>
+  <text x="580" y="230" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="800" fill="#8B5CF6">$165B</text>
+  <text x="580" y="420" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600" fill="#94A3B8">2025E</text>
+
+  <!-- Bar 4: 2026 (projected) -->
+  <rect x="720" y="175" width="80" height="225" fill="url(#svga-mkt-bar-purple)" rx="4"/>
+  <text x="760" y="165" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="800" fill="#8B5CF6">$232B</text>
+  <text x="760" y="420" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600" fill="#94A3B8">2026E</text>
+
+  <!-- Bar 5: 2027 (projected) -->
+  <rect x="900" y="110" width="80" height="290" fill="url(#svga-mkt-bar-green)" rx="4"/>
+  <text x="940" y="100" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="800" fill="#10B981">$298B</text>
+  <text x="940" y="420" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600" fill="#94A3B8">2027E</text>
+
+  <!-- Growth arrow -->
+  <path d="M 220 335 Q 580 200 940 110" fill="none" stroke="#F59E0B" stroke-width="2" stroke-dasharray="6 4" opacity="0.7"/>
+  <circle cx="220" cy="335" r="5" fill="#F59E0B" opacity="0.8"/>
+  <circle cx="940" cy="110" r="5" fill="#F59E0B" opacity="0.8"/>
+
+  <!-- CAGR annotation -->
+  <rect x="470" y="140" width="200" height="50" rx="8" fill="#1A1D24" stroke="#F59E0B" stroke-width="1"/>
+  <text x="570" y="165" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="800" fill="#F59E0B">CAGR ≈ 35%</text>
+  <text x="570" y="182" text-anchor="middle" font-family="PingFang SC, system-ui, sans-serif" font-size="13" fill="#94A3B8">2023-2027 年复合增长率</text>
+
+  <!-- Insight box -->
+  <rect x="80" y="450" width="1040" height="40" rx="8" fill="#1A1D24" stroke="#2A2D35" stroke-width="1"/>
+  <text x="600" y="475" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, system-ui, sans-serif" font-size="16" fill="#94A3B8">
+    4年4.5倍：AI 硬件+服务市场从 $66B 飙升至 $298B，GPU 占比超 70%
+  </text>
+</svg>
