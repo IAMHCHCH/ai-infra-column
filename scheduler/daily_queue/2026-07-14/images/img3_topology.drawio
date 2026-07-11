@@ -1,0 +1,264 @@
+<mxfile host="app.diagrams.net" modified="2026-07-11T03:19:00.000Z" agent="AIInfra" version="24.0.0">
+  <diagram id="nvswitch-topology" name="DGX H100 NVSwitch Topology">
+    <mxGraphModel dx="1422" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="800" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <!-- Title -->
+        <mxCell id="title" value="DGX H100：4× NVSwitch 全互联拓扑" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="1">
+          <mxGeometry x="300" y="20" width="600" height="40" as="geometry"/>
+        </mxCell>
+        <!-- Subtitle -->
+        <mxCell id="subtitle" value="每张 H100 通过 18 条 NVLink 连接 4 个 NVSwitch，实现 8 卡全互联" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="300" y="60" width="600" height="20" as="geometry"/>
+        </mxCell>
+        <!-- GPU 0 -->
+        <mxCell id="gpu0" value="GPU 0&#xa;H100 SXM5&#xa;18 NVLinks" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#76b900;strokeColor=#4a7a00;fontColor=#ffffff;fontStyle=1;fontSize=13;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="50" y="120" width="120" height="70" as="geometry"/>
+        </mxCell>
+        <!-- GPU 1 -->
+        <mxCell id="gpu1" value="GPU 1&#xa;H100 SXM5&#xa;18 NVLinks" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#76b900;strokeColor=#4a7a00;fontColor=#ffffff;fontStyle=1;fontSize=13;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="50" y="230" width="120" height="70" as="geometry"/>
+        </mxCell>
+        <!-- GPU 2 -->
+        <mxCell id="gpu2" value="GPU 2&#xa;H100 SXM5&#xa;18 NVLinks" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#76b900;strokeColor=#4a7a00;fontColor=#ffffff;fontStyle=1;fontSize=13;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="50" y="340" width="120" height="70" as="geometry"/>
+        </mxCell>
+        <!-- GPU 3 -->
+        <mxCell id="gpu3" value="GPU 3&#xa;H100 SXM5&#xa;18 NVLinks" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#76b900;strokeColor=#4a7a00;fontColor=#ffffff;fontStyle=1;fontSize=13;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="50" y="450" width="120" height="70" as="geometry"/>
+        </mxCell>
+        <!-- GPU 4 -->
+        <mxCell id="gpu4" value="GPU 4&#xa;H100 SXM5&#xa;18 NVLinks" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#76b900;strokeColor=#4a7a00;fontColor=#ffffff;fontStyle=1;fontSize=13;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="50" y="560" width="120" height="70" as="geometry"/>
+        </mxCell>
+        <!-- GPU 5 -->
+        <mxCell id="gpu5" value="GPU 5&#xa;H100 SXM5&#xa;18 NVLinks" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#76b900;strokeColor=#4a7a00;fontColor=#ffffff;fontStyle=1;fontSize=13;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="50" y="670" width="120" height="70" as="geometry"/>
+        </mxCell>
+        <!-- GPU 6 -->
+        <mxCell id="gpu6" value="GPU 6&#xa;H100 SXM5&#xa;18 NVLinks" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#76b900;strokeColor=#4a7a00;fontColor=#ffffff;fontStyle=1;fontSize=13;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="120" width="120" height="70" as="geometry"/>
+        </mxCell>
+        <!-- GPU 7 -->
+        <mxCell id="gpu7" value="GPU 7&#xa;H100 SXM5&#xa;18 NVLinks" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#76b900;strokeColor=#4a7a00;fontColor=#ffffff;fontStyle=1;fontSize=13;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="230" width="120" height="70" as="geometry"/>
+        </mxCell>
+        <!-- GPU 7b (placeholder for layout) -->
+        <mxCell id="gpu7b" value="GPU 7&#xa;(cont.)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#76b900;strokeColor=#4a7a00;fontColor=#ffffff;fontStyle=1;fontSize=13;arcSize=10;opacity=50;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="340" width="120" height="70" as="geometry"/>
+        </mxCell>
+        <!-- NVSwitch 0 -->
+        <mxCell id="sw0" value="NVSwitch 0&#xa;36-port L2&#xa;(Baseboard)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a1a2e;strokeColor=#76b900;fontColor=#76b900;fontStyle=1;fontSize=12;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="400" y="110" width="160" height="80" as="geometry"/>
+        </mxCell>
+        <!-- NVSwitch 1 -->
+        <mxCell id="sw1" value="NVSwitch 1&#xa;36-port L2&#xa;(Baseboard)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a1a2e;strokeColor=#76b900;fontColor=#76b900;fontStyle=1;fontSize=12;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="400" y="250" width="160" height="80" as="geometry"/>
+        </mxCell>
+        <!-- NVSwitch 2 -->
+        <mxCell id="sw2" value="NVSwitch 2&#xa;36-port L2&#xa;(Baseboard)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a1a2e;strokeColor=#76b900;fontColor=#76b900;fontStyle=1;fontSize=12;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="400" y="390" width="160" height="80" as="geometry"/>
+        </mxCell>
+        <!-- NVSwitch 3 -->
+        <mxCell id="sw3" value="NVSwitch 3&#xa;36-port L2&#xa;(Baseboard)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a1a2e;strokeColor=#76b900;fontColor=#76b900;fontStyle=1;fontSize=12;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="400" y="530" width="160" height="80" as="geometry"/>
+        </mxCell>
+        <!-- Right NVSwitches (second tier) -->
+        <mxCell id="sw4" value="NVSwitch 4&#xa;36-port L2&#xa;(Baseboard)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a1a2e;strokeColor=#76b900;fontColor=#76b900;fontStyle=1;fontSize=12;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="700" y="110" width="160" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="sw5" value="NVSwitch 5&#xa;36-port L2&#xa;(Baseboard)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a1a2e;strokeColor=#76b900;fontColor=#76b900;fontStyle=1;fontSize=12;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="700" y="250" width="160" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="sw6" value="NVSwitch 6&#xa;36-port L2&#xa;(Baseboard)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a1a2e;strokeColor=#76b900;fontColor=#76b900;fontStyle=1;fontSize=12;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="700" y="390" width="160" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="sw7" value="NVSwitch 7&#xa;36-port L2&#xa;(Baseboard)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a1a2e;strokeColor=#76b900;fontColor=#76b900;fontStyle=1;fontSize=12;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="700" y="530" width="160" height="80" as="geometry"/>
+        </mxCell>
+        <!-- Left GPU to Switch connections (GPUs 0-5 to all 4 left switches) -->
+        <mxCell id="e-g0s0" style="endArrow=none;strokeColor=#76b900;strokeWidth=2;opacity=60;" edge="1" parent="1" source="gpu0" target="sw0">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-g0s1" style="endArrow=none;strokeColor=#76b900;strokeWidth=2;opacity=60;" edge="1" parent="1" source="gpu0" target="sw1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-g0s2" style="endArrow=none;strokeColor=#76b900;strokeWidth=2;opacity=60;" edge="1" parent="1" source="gpu0" target="sw2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-g0s3" style="endArrow=none;strokeColor=#76b900;strokeWidth=2;opacity=60;" edge="1" parent="1" source="gpu0" target="sw3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-g1s0" style="endArrow=none;strokeColor=#76b900;strokeWidth=2;opacity=60;" edge="1" parent="1" source="gpu1" target="sw0">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-g1s1" style="endArrow=none;strokeColor=#76b900;strokeWidth=2;opacity=60;" edge="1" parent="1" source="gpu1" target="sw1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-g1s2" style="endArrow=none;strokeColor=#76b900;strokeWidth=2;opacity=60;" edge="1" parent="1" source="gpu1" target="sw2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-g1s3" style="endArrow=none;strokeColor=#76b900;strokeWidth=2;opacity=60;" edge="1" parent="1" source="gpu1" target="sw3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-g2s0" style="endArrow=none;strokeColor=#76b900;strokeWidth=2;opacity=60;" edge="1" parent="1" source="gpu2" target="sw0">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-g2s1" style="endArrow=none;strokeColor=#76b900;strokeWidth=2;opacity=60;" edge="1" parent="1" source="gpu2" target="sw1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-g2s2" style="endArrow=none;strokeColor=#76b900;strokeWidth=2;opacity=60;" edge="1" parent="1" source="gpu2" target="sw2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-g2s3" style="endArrow=none;strokeColor=#76b900;strokeWidth=2;opacity=60;" edge="1" parent="1" source="gpu2" target="sw3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-g3s0" style="endArrow=none;strokeColor=#76b900;strokeWidth=2;opacity=60;" edge="1" parent="1" source="gpu3" target="sw0">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-g3s1" style="endArrow=none;strokeColor=#76b900;strokeWidth=2;opacity=60;" edge="1" parent="1" source="gpu3" target="sw1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-g3s2" style="endArrow=none;strokeColor=#76b900;strokeWidth=2;opacity=60;" edge="1" parent="1" source="gpu3" target="sw2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-g3s3" style="endArrow=none;strokeColor=#76b900;strokeWidth=2;opacity=60;" edge="1" parent="1" source="gpu3" target="sw3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-g4s0" style="endArrow=none;strokeColor=#76b900;strokeWidth=2;opacity=60;" edge="1" parent="1" source="gpu4" target="sw0">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-g4s1" style="endArrow=none;strokeColor=#76b900;strokeWidth=2;opacity=60;" edge="1" parent="1" source="gpu4" target="sw1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-g4s2" style="endArrow=none;strokeColor=#76b900;strokeWidth=2;opacity=60;" edge="1" parent="1" source="gpu4" target="sw2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-g4s3" style="endArrow=none;strokeColor=#76b900;strokeWidth=2;opacity=60;" edge="1" parent="1" source="gpu4" target="sw3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-g5s0" style="endArrow=none;strokeColor=#76b900;strokeWidth=2;opacity=60;" edge="1" parent="1" source="gpu5" target="sw0">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-g5s1" style="endArrow=none;strokeColor=#76b900;strokeWidth=2;opacity=60;" edge="1" parent="1" source="gpu5" target="sw1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-g5s2" style="endArrow=none;strokeColor=#76b900;strokeWidth=2;opacity=60;" edge="1" parent="1" source="gpu5" target="sw2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-g5s3" style="endArrow=none;strokeColor=#76b900;strokeWidth=2;opacity=60;" edge="1" parent="1" source="gpu5" target="sw3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- Right GPU to Switch connections -->
+        <mxCell id="e-g6s4" style="endArrow=none;strokeColor=#76b900;strokeWidth=2;opacity=60;" edge="1" parent="1" source="gpu6" target="sw4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-g6s5" style="endArrow=none;strokeColor=#76b900;strokeWidth=2;opacity=60;" edge="1" parent="1" source="gpu6" target="sw5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-g6s6" style="endArrow=none;strokeColor=#76b900;strokeWidth=2;opacity=60;" edge="1" parent="1" source="gpu6" target="sw6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-g6s7" style="endArrow=none;strokeColor=#76b900;strokeWidth=2;opacity=60;" edge="1" parent="1" source="gpu6" target="sw7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-g7s4" style="endArrow=none;strokeColor=#76b900;strokeWidth=2;opacity=60;" edge="1" parent="1" source="gpu7" target="sw4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-g7s5" style="endArrow=none;strokeColor=#76b900;strokeWidth=2;opacity=60;" edge="1" parent="1" source="gpu7" target="sw5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-g7s6" style="endArrow=none;strokeColor=#76b900;strokeWidth=2;opacity=60;" edge="1" parent="1" source="gpu7" target="sw6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-g7s7" style="endArrow=none;strokeColor=#76b900;strokeWidth=2;opacity=60;" edge="1" parent="1" source="gpu7" target="sw7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- Inter-switch trunk links (all-to-all between left and right switch groups) -->
+        <mxCell id="e-sw0sw4" style="endArrow=none;strokeColor=#e0a800;strokeWidth=3;opacity=80;dashed=1;" edge="1" parent="1" source="sw0" target="sw4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-sw0sw5" style="endArrow=none;strokeColor=#e0a800;strokeWidth=3;opacity=80;dashed=1;" edge="1" parent="1" source="sw0" target="sw5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-sw0sw6" style="endArrow=none;strokeColor=#e0a800;strokeWidth=3;opacity=80;dashed=1;" edge="1" parent="1" source="sw0" target="sw6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-sw0sw7" style="endArrow=none;strokeColor=#e0a800;strokeWidth=3;opacity=80;dashed=1;" edge="1" parent="1" source="sw0" target="sw7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-sw1sw4" style="endArrow=none;strokeColor=#e0a800;strokeWidth=3;opacity=80;dashed=1;" edge="1" parent="1" source="sw1" target="sw4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-sw1sw5" style="endArrow=none;strokeColor=#e0a800;strokeWidth=3;opacity=80;dashed=1;" edge="1" parent="1" source="sw1" target="sw5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-sw1sw6" style="endArrow=none;strokeColor=#e0a800;strokeWidth=3;opacity=80;dashed=1;" edge="1" parent="1" source="sw1" target="sw6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-sw1sw7" style="endArrow=none;strokeColor=#e0a800;strokeWidth=3;opacity=80;dashed=1;" edge="1" parent="1" source="sw1" target="sw7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-sw2sw4" style="endArrow=none;strokeColor=#e0a800;strokeWidth=3;opacity=80;dashed=1;" edge="1" parent="1" source="sw2" target="sw4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-sw2sw5" style="endArrow=none;strokeColor=#e0a800;strokeWidth=3;opacity=80;dashed=1;" edge="1" parent="1" source="sw2" target="sw5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-sw2sw6" style="endArrow=none;strokeColor=#e0a800;strokeWidth=3;opacity=80;dashed=1;" edge="1" parent="1" source="sw2" target="sw6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-sw2sw7" style="endArrow=none;strokeColor=#e0a800;strokeWidth=3;opacity=80;dashed=1;" edge="1" parent="1" source="sw2" target="sw7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-sw3sw4" style="endArrow=none;strokeColor=#e0a800;strokeWidth=3;opacity=80;dashed=1;" edge="1" parent="1" source="sw3" target="sw4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-sw3sw5" style="endArrow=none;strokeColor=#e0a800;strokeWidth=3;opacity=80;dashed=1;" edge="1" parent="1" source="sw3" target="sw5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-sw3sw6" style="endArrow=none;strokeColor=#e0a800;strokeWidth=3;opacity=80;dashed=1;" edge="1" parent="1" source="sw3" target="sw6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-sw3sw7" style="endArrow=none;strokeColor=#e0a800;strokeWidth=3;opacity=80;dashed=1;" edge="1" parent="1" source="sw3" target="sw7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- Legend -->
+        <mxCell id="legend-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8f9fa;strokeColor=#dee2e6;arcSize=5;" vertex="1" parent="1">
+          <mxGeometry x="320" y="660" width="560" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend-title" value="图例" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="670" width="60" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend-gpu" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#76b900;strokeColor=#4a7a00;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="340" y="700" width="20" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend-gpu-text" value="H100 GPU" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="370" y="700" width="80" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend-sw" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a1a2e;strokeColor=#76b900;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="480" y="700" width="20" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend-sw-text" value="NVSwitch (L2)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="510" y="700" width="100" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend-link" value="──" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontColor=#76b900;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="700" width="20" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend-link-text" value="NVLink (50GB/s/方向)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="660" y="700" width="160" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend-trunk" value="──" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontColor=#e0a800;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="725" width="20" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend-trunk-text" value="Inter-switch trunk (NVLink)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="370" y="725" width="200" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="note" value="每张 GPU 有 18 条 NVLink (4→Switch0-3, 4→Switch4-7, 其余用于跨switch)&#xa;总带宽：18 × 50 = 900 GB/s (双向)&#xa;4 个 NVSwitch × 36 端口 = 144 端口，满足 8 GPU × 18 链路 = 144 端口" style="text;html=1;strokeColor=none;fillColor=#e8f5e9;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=11;fontColor=#333333;spacingLeft=10;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="900" y="660" width="280" height="70" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

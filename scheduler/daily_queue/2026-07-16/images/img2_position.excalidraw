@@ -1,0 +1,32 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "openclaw/ai-infra-column",
+  "elements": [
+    {"id":"title","type":"text","x":350,"y":15,"width":500,"height":35,"text":"CUDA 在 AI Infra 软件栈中的位置","fontSize":28,"fontFamily":2,"textAlign":"center","verticalAlign":"top","strokeColor":"#1e293b","seed":100001,"boundElements":null,"containerId":null},
+
+    {"id":"app_layer","type":"rectangle","x":100,"y":70,"width":1000,"height":70,"angle":0,"strokeColor":"#c2410c","backgroundColor":"#fed7aa","fillStyle":"solid","strokeWidth":2,"roughness":0,"opacity":100,"seed":100002,"boundElements":[{"id":"app_layer_t","type":"text"}]},
+    {"id":"app_layer_t","type":"text","text":"Application Layer: LLM 训练/推理 (Megatron-LM, DeepSpeed, vLLM, LangGraph)","fontSize":18,"fontFamily":2,"textAlign":"center","verticalAlign":"middle","strokeColor":"#1e293b","seed":100003,"containerId":"app_layer"},
+
+    {"id":"fw_layer","type":"rectangle","x":100,"y":170,"width":1000,"height":70,"angle":0,"strokeColor":"#166534","backgroundColor":"#dcfce7","fillStyle":"solid","strokeWidth":2,"roughness":0,"opacity":100,"seed":100004,"boundElements":[{"id":"fw_layer_t","type":"text"}]},
+    {"id":"fw_layer_t","type":"text","text":"Framework: PyTorch 2.0 / TensorFlow / JAX","fontSize":20,"fontFamily":2,"textAlign":"center","verticalAlign":"middle","strokeColor":"#1e293b","seed":100005,"containerId":"fw_layer"},
+
+    {"id":"cuda_libs","type":"rectangle","x":100,"y":270,"width":1000,"height":90,"angle":0,"strokeColor":"#10B981","backgroundColor":"#d1fae5","fillStyle":"solid","strokeWidth":2,"roughness":0,"opacity":100,"seed":100006,"boundElements":[{"id":"cuda_libs_t","type":"text"}]},
+    {"id":"cuda_libs_t","type":"text","text":"CUDA Libraries: cuDNN (深度学习) | cuBLAS (线性代数) | NCCL (多卡通信) | TensorRT (推理优化)","fontSize":16,"fontFamily":2,"textAlign":"center","verticalAlign":"middle","strokeColor":"#1e293b","seed":100007,"containerId":"cuda_libs"},
+
+    {"id":"cuda_rt","type":"rectangle","x":100,"y":390,"width":1000,"height":60,"angle":0,"strokeColor":"#3b82f6","backgroundColor":"#dbeafe","fillStyle":"solid","strokeWidth":2,"roughness":0,"opacity":100,"seed":100008,"boundElements":[{"id":"cuda_rt_t","type":"text"}]},
+    {"id":"cuda_rt_t","type":"text","text":"CUDA Runtime (cudart) + Driver (CUDA Driver API)","fontSize":18,"fontFamily":2,"textAlign":"center","verticalAlign":"middle","strokeColor":"#1e293b","seed":100009,"containerId":"cuda_rt"},
+
+    {"id":"gpu_hw","type":"rectangle","x":100,"y":480,"width":1000,"height":60,"angle":0,"strokeColor":"#6b21a8","backgroundColor":"#f3e8ff","fillStyle":"solid","strokeWidth":2,"roughness":0,"opacity":100,"seed":100010,"boundElements":[{"id":"gpu_hw_t","type":"text"}]},
+    {"id":"gpu_hw_t","type":"text","text":"GPU Hardware: NVIDIA H100 / A100 / AMD MI300X (via HIP compatibility)","fontSize":18,"fontFamily":2,"textAlign":"center","verticalAlign":"middle","strokeColor":"#1e293b","seed":100011,"containerId":"gpu_hw"},
+
+    {"id":"arr1","type":"arrow","x":600,"y":140,"width":0,"height":30,"angle":0,"strokeColor":"#475569","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":2,"strokeStyle":"solid","roughness":0,"opacity":100,"seed":200001,"points":[[0,0],[0,30]],"endArrowhead":"arrow","startArrowhead":null},
+    {"id":"arr2","type":"arrow","x":600,"y":240,"width":0,"height":30,"angle":0,"strokeColor":"#475569","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":2,"strokeStyle":"solid","roughness":0,"opacity":100,"seed":200002,"points":[[0,0],[0,30]],"endArrowhead":"arrow","startArrowhead":null},
+    {"id":"arr3","type":"arrow","x":600,"y":360,"width":0,"height":30,"angle":0,"strokeColor":"#475569","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":2,"strokeStyle":"solid","roughness":0,"opacity":100,"seed":200003,"points":[[0,0],[0,30]],"endArrowhead":"arrow","startArrowhead":null},
+    {"id":"arr4","type":"arrow","x":600,"y":450,"width":0,"height":30,"angle":0,"strokeColor":"#475569","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":2,"strokeStyle":"solid","roughness":0,"opacity":100,"seed":200004,"points":[[0,0],[0,30]],"endArrowhead":"arrow","startArrowhead":null},
+
+    {"id":"note","type":"text","x":200,"y":570,"width":800,"height":24,"text":"护城河核心：cuDNN/cuBLAS 经过 15 年深度优化，与 NVIDIA GPU 微架构深度耦合","fontSize":16,"fontFamily":2,"textAlign":"center","verticalAlign":"top","strokeColor":"#64748b","seed":300001,"boundElements":null,"containerId":null},
+    {"id":"source","type":"text","x":200,"y":600,"width":800,"height":20,"text":"来源：NVIDIA CUDA Toolkit Documentation / PyTorch Official","fontSize":12,"fontFamily":2,"textAlign":"center","verticalAlign":"top","strokeColor":"#94a3b8","seed":300002,"boundElements":null,"containerId":null}
+  ],
+  "appState": {"viewBackgroundColor":"#ffffff"}
+}

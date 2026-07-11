@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+    <linearGradient id="barH100" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#38bdf8"/>
+      <stop offset="100%" style="stop-color:#0284c7"/>
+    </linearGradient>
+    <linearGradient id="barMI300X" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#a78bfa"/>
+      <stop offset="100%" style="stop-color:#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="barGaudi2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    <linearGradient id="barH100Cap" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#7dd3fc;stop-opacity:0.5"/>
+      <stop offset="100%" style="stop-color:#0ea5e9;stop-opacity:0.3"/>
+    </linearGradient>
+    <linearGradient id="barMI300XCap" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#c4b5fd;stop-opacity:0.5"/>
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0.3"/>
+    </linearGradient>
+    <linearGradient id="barGaudi2Cap" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fcd34d;stop-opacity:0.5"/>
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="500" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="600" y="40" text-anchor="middle" fill="#f1f5f9" font-family="sans-serif" font-size="22" font-weight="bold">三款加速器 HBM 容量与带宽对比</text>
+  <text x="600" y="62" text-anchor="middle" fill="#94a3b8" font-family="sans-serif" font-size="13">Data Source: NVIDIA / AMD / Intel Official Spec Sheets</text>
+
+  <!-- Y-axis labels (Bandwidth) -->
+  <g fill="#64748b" font-family="monospace" font-size="11">
+    <text x="100" y="100">6.0 TB/s</text>
+    <text x="100" y="160">5.0 TB/s</text>
+    <text x="100" y="220">4.0 TB/s</text>
+    <text x="100" y="280">3.0 TB/s</text>
+    <text x="100" y="340">2.0 TB/s</text>
+    <text x="100" y="400">1.0 TB/s</text>
+    <text x="100" y="430">0</text>
+  </g>
+
+  <!-- Grid lines -->
+  <g stroke="#334155" stroke-width="1" stroke-dasharray="4,4" opacity="0.5">
+    <line x1="170" y1="95" x2="1150" y2="95"/>
+    <line x1="170" y1="155" x2="1150" y2="155"/>
+    <line x1="170" y1="215" x2="1150" y2="215"/>
+    <line x1="170" y1="275" x2="1150" y2="275"/>
+    <line x1="170" y1="335" x2="1150" y2="335"/>
+    <line x1="170" y1="395" x2="1150" y2="395"/>
+  </g>
+
+  <!-- Axes -->
+  <line x1="170" y1="90" x2="170" y2="430" stroke="#475569" stroke-width="2"/>
+  <line x1="170" y1="430" x2="1150" y2="430" stroke="#475569" stroke-width="2"/>
+
+  <!-- Y-axis label -->
+  <text x="60" y="260" fill="#94a3b8" font-family="sans-serif" font-size="13" text-anchor="middle" transform="rotate(-90, 60, 260)">Memory Bandwidth (TB/s)</text>
+
+  <!-- X-axis label -->
+  <text x="660" y="490" text-anchor="middle" fill="#94a3b8" font-family="sans-serif" font-size="13">Accelerator</text>
+
+  <!-- Right Y-axis for capacity -->
+  <line x1="1150" y1="90" x2="1150" y2="430" stroke="#475569" stroke-width="2"/>
+  <g fill="#64748b" font-family="monospace" font-size="11" text-anchor="start">
+    <text x="1160" y="100">240 GB</text>
+    <text x="1160" y="160">200 GB</text>
+    <text x="1160" y="220">160 GB</text>
+    <text x="1160" y="280">120 GB</text>
+    <text x="1160" y="340">80 GB</text>
+    <text x="1160" y="400">40 GB</text>
+  </g>
+  <text x="1230" y="260" fill="#94a3b8" font-family="sans-serif" font-size="13" text-anchor="middle" transform="rotate(90, 1230, 260)">HBM Capacity (GB)</text>
+
+  <!-- ===== NVIDIA H100 ===== -->
+  <!-- Group 1: H100 -->
+  <!-- Bandwidth bar: 3.35 TB/s -> 3.35/6 * 330 = 184px height -->
+  <rect x="260" y="246" width="80" height="184" fill="url(#barH100)" rx="4"/>
+  <text x="300" y="236" text-anchor="middle" fill="#38bdf8" font-family="monospace" font-size="14" font-weight="bold">3.35 TB/s</text>
+
+  <!-- Capacity bar: 80GB -> 80/240 * 330 = 110px -->
+  <rect x="360" y="320" width="50" height="110" fill="url(#barH100Cap)" rx="4" stroke="#38bdf8" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="385" y="310" text-anchor="middle" fill="#7dd3fc" font-family="monospace" font-size="13" font-weight="bold">80 GB</text>
+
+  <!-- Label -->
+  <text x="330" y="455" text-anchor="middle" fill="#e2e8f0" font-family="sans-serif" font-size="14" font-weight="bold">NVIDIA H100</text>
+  <text x="330" y="473" text-anchor="middle" fill="#64748b" font-family="monospace" font-size="11">HBM3 | SXM5</text>
+
+  <!-- Divider -->
+  <line x1="470" y1="100" x2="470" y2="430" stroke="#334155" stroke-width="1" stroke-dasharray="2,6" opacity="0.4"/>
+
+  <!-- ===== AMD MI300X ===== -->
+  <!-- Bandwidth bar: 5.3 TB/s -> 5.3/6 * 330 = 292px -->
+  <rect x="560" y="138" width="80" height="292" fill="url(#barMI300X)" rx="4"/>
+  <text x="600" y="128" text-anchor="middle" fill="#a78bfa" font-family="monospace" font-size="14" font-weight="bold">5.3 TB/s</text>
+
+  <!-- Capacity bar: 192GB -> 192/240 * 330 = 264px -->
+  <rect x="660" y="166" width="50" height="264" fill="url(#barMI300XCap)" rx="4" stroke="#a78bfa" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="685" y="156" text-anchor="middle" fill="#c4b5fd" font-family="monospace" font-size="13" font-weight="bold">192 GB</text>
+
+  <!-- Label -->
+  <text x="630" y="455" text-anchor="middle" fill="#e2e8f0" font-family="sans-serif" font-size="14" font-weight="bold">AMD MI300X</text>
+  <text x="630" y="473" text-anchor="middle" fill="#64748b" font-family="monospace" font-size="11">HBM3 | 12-Hi</text>
+
+  <!-- Crown for MI300X -->
+  <text x="600" y="115" text-anchor="middle" font-family="sans-serif" font-size="20">👑</text>
+
+  <!-- Divider -->
+  <line x1="770" y1="100" x2="770" y2="430" stroke="#334155" stroke-width="1" stroke-dasharray="2,6" opacity="0.4"/>
+
+  <!-- ===== Intel Gaudi2 ===== -->
+  <!-- Bandwidth bar: 2.45 TB/s -> 2.45/6 * 330 = 135px -->
+  <rect x="860" y="295" width="80" height="135" fill="url(#barGaudi2)" rx="4"/>
+  <text x="900" y="285" text-anchor="middle" fill="#fbbf24" font-family="monospace" font-size="14" font-weight="bold">2.45 TB/s</text>
+
+  <!-- Capacity bar: 96GB -> 96/240 * 330 = 132px -->
+  <rect x="960" y="298" width="50" height="132" fill="url(#barGaudi2Cap)" rx="4" stroke="#fbbf24" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="985" y="288" text-anchor="middle" fill="#fcd34d" font-family="monospace" font-size="13" font-weight="bold">96 GB</text>
+
+  <!-- Label -->
+  <text x="930" y="455" text-anchor="middle" fill="#e2e8f0" font-family="sans-serif" font-size="14" font-weight="bold">Intel Gaudi2</text>
+  <text x="930" y="473" text-anchor="middle" fill="#64748b" font-family="monospace" font-size="11">HBM2e</text>
+
+  <!-- Legend -->
+  <g transform="translate(200, 80)">
+    <rect x="0" y="0" width="14" height="14" fill="#38bdf8" rx="2"/>
+    <text x="20" y="12" fill="#94a3b8" font-family="sans-serif" font-size="12">带宽 (左轴)</text>
+
+    <rect x="120" y="0" width="14" height="14" fill="none" stroke="#38bdf8" stroke-width="1" stroke-dasharray="3,3" rx="2"/>
+    <text x="140" y="12" fill="#94a3b8" font-family="sans-serif" font-size="12">容量 (右轴)</text>
+  </g>
+
+  <!-- Key insight -->
+  <g transform="translate(820, 95)">
+    <rect x="0" y="0" width="300" height="28" rx="14" fill="#7c3aed" opacity="0.15" stroke="#7c3aed" stroke-width="1"/>
+    <text x="150" y="19" text-anchor="middle" fill="#c4b5fd" font-family="monospace" font-size="12">MI300X: 2.4× 容量 + 1.6× 带宽 vs H100</text>
+  </g>
+</svg>

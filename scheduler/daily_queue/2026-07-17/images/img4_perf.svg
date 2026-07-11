@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500">
+  <defs>
+    <linearGradient id="bgG" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+    <filter id="glow1">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="500" fill="url(#bgG)"/>
+
+  <!-- Title -->
+  <text x="600" y="36" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="22" font-weight="700" fill="#f1f5f9">
+    全球 AI 芯片性能 / 能效象限图
+  </text>
+  <text x="600" y="58" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#64748b">
+    数据来源：MLPerf 4.1 Training &amp; Inference Benchmark · 2026.07
+  </text>
+
+  <!-- Chart Area: x=100..1100, y=90..440 -->
+  <!-- Axes -->
+  <line x1="100" y1="440" x2="1100" y2="440" stroke="#475569" stroke-width="2"/>
+  <line x1="100" y1="90" x2="100" y2="440" stroke="#475569" stroke-width="2"/>
+
+  <!-- Axis Labels -->
+  <text x="600" y="475" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="14" font-weight="600" fill="#94a3b8">
+    性能（MLPerf 训练吞吐量，归一化分值）→
+  </text>
+  <text x="40" y="265" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="14" font-weight="600" fill="#94a3b8" transform="rotate(-90, 40, 265)">
+    能效（TFLOPS/W，FP16）→
+  </text>
+
+  <!-- Quadrant dividers -->
+  <line x1="600" y1="90" x2="600" y2="440" stroke="#334155" stroke-width="1" stroke-dasharray="6,4" opacity="0.6"/>
+  <line x1="100" y1="265" x2="1100" y2="265" stroke="#334155" stroke-width="1" stroke-dasharray="6,4" opacity="0.6"/>
+
+  <!-- Quadrant Labels -->
+  <text x="350" y="110" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#475569" font-style="italic">高能效 · 中低性能</text>
+  <text x="850" y="110" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#475569" font-style="italic">高性能 · 高能效（理想区）</text>
+  <text x="350" y="430" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#475569" font-style="italic">低性能 · 低能效</text>
+  <text x="850" y="430" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#475569" font-style="italic">高性能 · 低能效（功耗优先）</text>
+
+  <!-- Scale markers X -->
+  <text x="100" y="455" text-anchor="middle" font-family="monospace" font-size="10" fill="#475569">0</text>
+  <text x="350" y="455" text-anchor="middle" font-family="monospace" font-size="10" fill="#475569">25</text>
+  <text x="600" y="455" text-anchor="middle" font-family="monospace" font-size="10" fill="#475569">50</text>
+  <text x="850" y="455" text-anchor="middle" font-family="monospace" font-size="10" fill="#475569">75</text>
+  <text x="1100" y="455" text-anchor="middle" font-family="monospace" font-size="10" fill="#475569">100</text>
+
+  <!-- Scale markers Y -->
+  <text x="90" y="444" text-anchor="end" font-family="monospace" font-size="10" fill="#475569">0</text>
+  <text x="90" y="269" text-anchor="end" font-family="monospace" font-size="10" fill="#475569">50</text>
+  <text x="90" y="94" text-anchor="end" font-family="monospace" font-size="10" fill="#475569">100</text>
+
+  <!-- NVIDIA H100 (Performance ~92, Efficiency ~55) -->
+  <g transform="translate(1024, 175)">
+    <circle cx="0" cy="0" r="14" fill="#76b900" opacity="0.2" filter="url(#glow1)"/>
+    <circle cx="0" cy="0" r="8" fill="#76b900"/>
+    <text x="0" y="-22" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#76b900">NVIDIA H100</text>
+    <text x="0" y="28" text-anchor="middle" font-family="monospace" font-size="9" fill="#94a3b8">perf 92 · eff 55</text>
+  </g>
+
+  <!-- NVIDIA B200 (Performance ~98, Efficiency ~62) -->
+  <g transform="translate(1090, 130)">
+    <circle cx="0" cy="0" r="14" fill="#76b900" opacity="0.15" filter="url(#glow1)"/>
+    <circle cx="0" cy="0" r="7" fill="#a3e635"/>
+    <text x="0" y="-22" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#a3e635">NVIDIA B200</text>
+    <text x="0" y="26" text-anchor="middle" font-family="monospace" font-size="9" fill="#94a3b8">perf 98 · eff 62</text>
+  </g>
+
+  <!-- AMD MI300X (Performance ~78, Efficiency ~48) -->
+  <g transform="translate(820, 198)">
+    <circle cx="0" cy="0" r="14" fill="#ed1c24" opacity="0.2" filter="url(#glow1)"/>
+    <circle cx="0" cy="0" r="8" fill="#ed1c24"/>
+    <text x="0" y="-22" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#ed1c24">AMD MI300X</text>
+    <text x="0" y="28" text-anchor="middle" font-family="monospace" font-size="9" fill="#94a3b8">perf 78 · eff 48</text>
+  </g>
+
+  <!-- Intel Gaudi 3 (Performance ~65, Efficiency ~52) -->
+  <g transform="translate(690, 180)">
+    <circle cx="0" cy="0" r="12" fill="#0071c5" opacity="0.2" filter="url(#glow1)"/>
+    <circle cx="0" cy="0" r="7" fill="#0071c5"/>
+    <text x="0" y="-20" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#0071c5">Intel Gaudi 3</text>
+    <text x="0" y="26" text-anchor="middle" font-family="monospace" font-size="9" fill="#94a3b8">perf 65 · eff 52</text>
+  </g>
+
+  <!-- Google TPU v5p (Performance ~72, Efficiency ~68) -->
+  <g transform="translate(760, 110)">
+    <circle cx="0" cy="0" r="14" fill="#4285f4" opacity="0.2" filter="url(#glow1)"/>
+    <circle cx="0" cy="0" r="8" fill="#4285f4"/>
+    <text x="0" y="-22" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#4285f4">Google TPU v5p</text>
+    <text x="0" y="28" text-anchor="middle" font-family="monospace" font-size="9" fill="#94a3b8">perf 72 · eff 68</text>
+  </g>
+
+  <!-- Google TPU v6 Trillium (Performance ~85, Efficiency ~78) -->
+  <g transform="translate(940, 90)">
+    <circle cx="0" cy="0" r="13" fill="#4285f4" opacity="0.15" filter="url(#glow1)"/>
+    <circle cx="0" cy="0" r="7" fill="#60a5fa"/>
+    <text x="0" y="-20" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#60a5fa">TPU v6 Trillium</text>
+    <text x="0" y="26" text-anchor="middle" font-family="monospace" font-size="9" fill="#94a3b8">perf 85 · eff 78</text>
+  </g>
+
+  <!-- AWS Trainium2 (Performance ~58, Efficiency ~72) -->
+  <g transform="translate(620, 95)">
+    <circle cx="0" cy="0" r="12" fill="#ff9900" opacity="0.2" filter="url(#glow1)"/>
+    <circle cx="0" cy="0" r="7" fill="#ff9900"/>
+    <text x="0" y="-20" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#ff9900">AWS Trainium2</text>
+    <text x="0" y="26" text-anchor="middle" font-family="monospace" font-size="9" fill="#94a3b8">perf 58 · eff 72</text>
+  </g>
+
+  <!-- 昇腾 910B (Performance ~45, Efficiency ~50) -->
+  <g transform="translate(480, 175)">
+    <circle cx="0" cy="0" r="11" fill="#c41e3a" opacity="0.2" filter="url(#glow1)"/>
+    <circle cx="0" cy="0" r="6" fill="#c41e3a"/>
+    <text x="0" y="-18" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#c41e3a">昇腾 910B</text>
+    <text x="0" y="24" text-anchor="middle" font-family="monospace" font-size="9" fill="#94a3b8">perf 45 · eff 50</text>
+  </g>
+
+  <!-- 鲲鹏 (Performance ~35, Efficiency ~60) -->
+  <g transform="translate(420, 110)">
+    <circle cx="0" cy="0" r="11" fill="#e34c26" opacity="0.2" filter="url(#glow1)"/>
+    <circle cx="0" cy="0" r="6" fill="#e34c26"/>
+    <text x="0" y="-18" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#e34c26">鲲鹏 920</text>
+    <text x="0" y="24" text-anchor="middle" font-family="monospace" font-size="9" fill="#94a3b8">perf 35 · eff 60</text>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(130, 490)">
+    <text x="0" y="0" font-family="system-ui, sans-serif" font-size="10" fill="#64748b">圆点大小 = 综合影响力指数（生态+性能+部署量）</text>
+  </g>
+  <g transform="translate(830, 490)">
+    <text x="0" y="0" font-family="system-ui, sans-serif" font-size="10" fill="#64748b">数据来源：MLPerf 4.1 / 各厂商公开数据</text>
+  </g>
+</svg>

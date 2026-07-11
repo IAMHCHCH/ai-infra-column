@@ -1,0 +1,176 @@
+<mxfile host="app.diagrams.net" modified="2026-07-11T03:19:00.000Z" agent="AIInfra" version="24.0.0">
+  <diagram id="meta-grand-teton" name="Meta Grand Teton NVLink Architecture">
+    <mxGraphModel dx="1422" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="800" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <!-- Title -->
+        <mxCell id="title" value="Meta Grand Teton 平台 — NVLink 布线架构" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="1">
+          <mxGeometry x="300" y="20" width="600" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="subtitle" value="Meta 定制 AI 平台 · 8× H100 SXM5 · 4× NVSwitch Baseboard" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="300" y="60" width="600" height="20" as="geometry"/>
+        </mxCell>
+        <!-- CPU Module -->
+        <mxCell id="cpu" value="Intel Xeon&#xa;Sapphire Rapids&#xa;(Host CPU)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e3f2fd;strokeColor=#1565c0;fontColor=#0d47a1;fontStyle=1;fontSize=12;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="50" y="120" width="140" height="70" as="geometry"/>
+        </mxCell>
+        <!-- PCIe Switch -->
+        <mxCell id="pcie-sw" value="PCIe 5.0&#xa;Switch&#xa;(CPU ↔ GPU)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3e5f5;strokeColor=#7b1fa2;fontColor=#4a148c;fontStyle=1;fontSize=11;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="260" y="120" width="120" height="70" as="geometry"/>
+        </mxCell>
+        <!-- GPU Board Left -->
+        <mxCell id="gpu-board-left-label" value="GPU Baseboard 1 (SXM5)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="150" y="230" width="320" height="20" as="geometry"/>
+        </mxCell>
+        <!-- GPU 0 -->
+        <mxCell id="m-gpu0" value="GPU 0&#xa;H100" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#76b900;strokeColor=#4a7a00;fontColor=#ffffff;fontStyle=1;fontSize=12;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="150" y="260" width="80" height="50" as="geometry"/>
+        </mxCell>
+        <!-- GPU 1 -->
+        <mxCell id="m-gpu1" value="GPU 1&#xa;H100" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#76b900;strokeColor=#4a7a00;fontColor=#ffffff;fontStyle=1;fontSize=12;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="250" y="260" width="80" height="50" as="geometry"/>
+        </mxCell>
+        <!-- GPU 2 -->
+        <mxCell id="m-gpu2" value="GPU 2&#xa;H100" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#76b900;strokeColor=#4a7a00;fontColor=#ffffff;fontStyle=1;fontSize=12;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="150" y="330" width="80" height="50" as="geometry"/>
+        </mxCell>
+        <!-- GPU 3 -->
+        <mxCell id="m-gpu3" value="GPU 3&#xa;H100" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#76b900;strokeColor=#4a7a00;fontColor=#ffffff;fontStyle=1;fontSize=12;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="250" y="330" width="80" height="50" as="geometry"/>
+        </mxCell>
+        <!-- NVSwitch BB1 -->
+        <mxCell id="nvsw-bb1" value="NVSwitch&#xa;Baseboard 1&#xa;(4× NVSwitch L2)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a1a2e;strokeColor=#76b900;fontColor=#76b900;fontStyle=1;fontSize=11;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="420" y="280" width="140" height="80" as="geometry"/>
+        </mxCell>
+        <!-- GPU Board Right -->
+        <mxCell id="gpu-board-right-label" value="GPU Baseboard 2 (SXM5)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="650" y="230" width="320" height="20" as="geometry"/>
+        </mxCell>
+        <!-- GPU 4 -->
+        <mxCell id="m-gpu4" value="GPU 4&#xa;H100" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#76b900;strokeColor=#4a7a00;fontColor=#ffffff;fontStyle=1;fontSize=12;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="650" y="260" width="80" height="50" as="geometry"/>
+        </mxCell>
+        <!-- GPU 5 -->
+        <mxCell id="m-gpu5" value="GPU 5&#xa;H100" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#76b900;strokeColor=#4a7a00;fontColor=#ffffff;fontStyle=1;fontSize=12;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="750" y="260" width="80" height="50" as="geometry"/>
+        </mxCell>
+        <!-- GPU 6 -->
+        <mxCell id="m-gpu6" value="GPU 6&#xa;H100" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#76b900;strokeColor=#4a7a00;fontColor=#ffffff;fontStyle=1;fontSize=12;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="650" y="330" width="80" height="50" as="geometry"/>
+        </mxCell>
+        <!-- GPU 7 -->
+        <mxCell id="m-gpu7" value="GPU 7&#xa;H100" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#76b900;strokeColor=#4a7a00;fontColor=#ffffff;fontStyle=1;fontSize=12;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="750" y="330" width="80" height="50" as="geometry"/>
+        </mxCell>
+        <!-- NVSwitch BB2 -->
+        <mxCell id="nvsw-bb2" value="NVSwitch&#xa;Baseboard 2&#xa;(4× NVSwitch L2)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a1a2e;strokeColor=#76b900;fontColor=#76b900;fontStyle=1;fontSize=11;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="920" y="280" width="140" height="80" as="geometry"/>
+        </mxCell>
+        <!-- Network Interface -->
+        <mxCell id="nic" value="BlueField-3&#xa;DPU + ConnectX-7&#xa;(400G IB)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff3e0;strokeColor=#e65100;fontColor=#bf360c;fontStyle=1;fontSize=11;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="420" y="120" width="140" height="70" as="geometry"/>
+        </mxCell>
+        <!-- External Network -->
+        <mxCell id="ext-net" value="Meta Infra&#xa;Backend Network&#xa;(InfiniBand 400G)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8eaf6;strokeColor=#283593;fontColor=#1a237e;fontStyle=1;fontSize=11;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="640" y="120" width="160" height="70" as="geometry"/>
+        </mxCell>
+        <!-- Connections: CPU to PCIe Switch -->
+        <mxCell id="e-cpu-pcie" style="endArrow=none;strokeColor=#1565c0;strokeWidth=2;" edge="1" parent="1" source="cpu" target="pcie-sw">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- PCIe Switch to GPUs (control path) -->
+        <mxCell id="e-pcie-gpu0" style="endArrow=none;strokeColor=#7b1fa2;strokeWidth=1.5;dashed=1;opacity=60;" edge="1" parent="1" source="pcie-sw" target="m-gpu0">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-pcie-gpu4" style="endArrow=none;strokeColor=#7b1fa2;strokeWidth=1.5;dashed=1;opacity=60;" edge="1" parent="1" source="pcie-sw" target="m-gpu4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- GPU 0-3 to NVSwitch BB1 -->
+        <mxCell id="e-g0-sw1" style="endArrow=none;strokeColor=#76b900;strokeWidth=2;opacity=70;" edge="1" parent="1" source="m-gpu0" target="nvsw-bb1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-g1-sw1" style="endArrow=none;strokeColor=#76b900;strokeWidth=2;opacity=70;" edge="1" parent="1" source="m-gpu1" target="nvsw-bb1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-g2-sw1" style="endArrow=none;strokeColor=#76b900;strokeWidth=2;opacity=70;" edge="1" parent="1" source="m-gpu2" target="nvsw-bb1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-g3-sw1" style="endArrow=none;strokeColor=#76b900;strokeWidth=2;opacity=70;" edge="1" parent="1" source="m-gpu3" target="nvsw-bb1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- GPU 4-7 to NVSwitch BB2 -->
+        <mxCell id="e-g4-sw2" style="endArrow=none;strokeColor=#76b900;strokeWidth=2;opacity=70;" edge="1" parent="1" source="m-gpu4" target="nvsw-bb2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-g5-sw2" style="endArrow=none;strokeColor=#76b900;strokeWidth=2;opacity=70;" edge="1" parent="1" source="m-gpu5" target="nvsw-bb2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-g6-sw2" style="endArrow=none;strokeColor=#76b900;strokeWidth=2;opacity=70;" edge="1" parent="1" source="m-gpu6" target="nvsw-bb2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-g7-sw2" style="endArrow=none;strokeColor=#76b900;strokeWidth=2;opacity=70;" edge="1" parent="1" source="m-gpu7" target="nvsw-bb2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- Inter-baseboard trunk (NVLink trunk between BB1 and BB2) -->
+        <mxCell id="e-bb1-bb2" value="NVLink Trunk&#xa;(全互联)" style="endArrow=none;strokeColor=#e0a800;strokeWidth=4;opacity=90;dashed=1;fontSize=11;fontColor=#e0a800;labelBackgroundColor=#0f1626;" edge="1" parent="1" source="nvsw-bb1" target="nvsw-bb2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="560" y="300"/>
+              <mxPoint x="920" y="300"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <!-- NIC to External Network -->
+        <mxCell id="e-nic-net" style="endArrow=none;strokeColor=#e65100;strokeWidth=2;" edge="1" parent="1" source="nic" target="ext-net">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- NIC to PCIe Switch -->
+        <mxCell id="e-nic-pcie" style="endArrow=none;strokeColor=#7b1fa2;strokeWidth=1.5;dashed=1;opacity=60;" edge="1" parent="1" source="pcie-sw" target="nic">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- Specs box -->
+        <mxCell id="spec-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8f9fa;strokeColor=#dee2e6;arcSize=5;" vertex="1" parent="1">
+          <mxGeometry x="50" y="430" width="560" height="140" as="geometry"/>
+        </mxCell>
+        <mxCell id="spec-title" value="Grand Teton NVLink 关键规格" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="440" width="280" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="spec-1" value="• GPU：8× NVIDIA H100 SXM5 (80GB HBM3)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="70" y="470" width="280" height="18" as="geometry"/>
+        </mxCell>
+        <mxCell id="spec-2" value="• NVLink：4.0，每 GPU 18 条链路，900 GB/s 双向" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="70" y="492" width="300" height="18" as="geometry"/>
+        </mxCell>
+        <mxCell id="spec-3" value="• NVSwitch：2× Baseboard，各含 4× NVSwitch L2 (36-port)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="70" y="514" width="350" height="18" as="geometry"/>
+        </mxCell>
+        <mxCell id="spec-4" value="• CPU：Intel Xeon Sapphire Rapids (PCIe 5.0 控制路径)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="70" y="536" width="350" height="18" as="geometry"/>
+        </mxCell>
+        <mxCell id="spec-5" value="• 网络：BlueField-3 DPU + ConnectX-7 (400G InfiniBand)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="70" y="558" width="350" height="18" as="geometry"/>
+        </mxCell>
+        <!-- Legend -->
+        <mxCell id="legend-box2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8f9fa;strokeColor=#dee2e6;arcSize=5;" vertex="1" parent="1">
+          <mxGeometry x="640" y="430" width="420" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend-title2" value="数据路径" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="440" width="100" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg2-1" value="── NVLink 数据路径 (900 GB/s)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#76b900;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="470" width="220" height="18" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg2-2" value="── PCIe 控制路径 (128 GB/s)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#7b1fa2;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="492" width="200" height="18" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg2-3" value="── NVSwitch Trunk (跨板全互联)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#e0a800;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="514" width="220" height="18" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg2-4" value="── InfiniBand (跨节点)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#e65100;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="536" width="200" height="18" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

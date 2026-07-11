@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="drawio-skill" version="21.0.0" type="device">
+  <diagram name="TorchCompile" id="diag-tc-1">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="500" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="title" value="PyTorch 2.0 torch.compile -> Triton Kernel 生成流程" style="text;html=1;align=center;fontSize=20;fontStyle=1;fontColor=#1e293b;" vertex="1" parent="1">
+          <mxGeometry x="200" y="10" width="800" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Step 1: Python Model -->
+        <mxCell id="s1" value="Python Model Code&#xa;(nn.Module)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fed7aa;strokeColor=#c2410c;strokeWidth=2;fontSize=14;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="60" y="80" width="160" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- Step 2: torch.compile -->
+        <mxCell id="s2" value="torch.compile()&#xa;Dynamo Backend" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fef9c3;strokeColor=#854d0e;strokeWidth=2;fontSize=14;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="290" y="80" width="160" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- Step 3: FX Graph -->
+        <mxCell id="s3" value="FX Graph&#xa;IR (中间表示)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dbeafe;strokeColor=#3b82f6;strokeWidth=2;fontSize=14;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="520" y="80" width="160" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- Step 4: Triton -->
+        <mxCell id="s4" value="Triton Compiler&#xa;GPU Kernel 生成" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d1fae5;strokeColor=#10B981;strokeWidth=2;fontSize=14;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="750" y="80" width="160" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- Step 5: PTX -->
+        <mxCell id="s5" value="PTX / SASS&#xa;GPU 机器码" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3e8ff;strokeColor=#6b21a8;strokeWidth=2;fontSize=14;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="980" y="80" width="160" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- Arrows -->
+        <mxCell id="a1" value="" style="endArrow=arrow;html=1;strokeColor=#475569;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="s1" target="s2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a2" value="" style="endArrow=arrow;html=1;strokeColor=#475569;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="s2" target="s3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a3" value="" style="endArrow=arrow;html=1;strokeColor=#475569;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="s3" target="s4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a4" value="" style="endArrow=arrow;html=1;strokeColor=#475569;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="s4" target="s5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Labels on arrows -->
+        <mxCell id="l1" value="编译" style="text;html=1;align=center;fontSize=11;fontColor=#64748b;" vertex="1" parent="1">
+          <mxGeometry x="250" y="115" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="l2" value="图追踪" style="text;html=1;align=center;fontSize=11;fontColor=#64748b;" vertex="1" parent="1">
+          <mxGeometry x="470" y="115" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="l3" value="代码生成" style="text;html=1;align=center;fontSize=11;fontColor=#64748b;" vertex="1" parent="1">
+          <mxGeometry x="700" y="115" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="l4" value="汇编" style="text;html=1;align=center;fontSize=11;fontColor=#64748b;" vertex="1" parent="1">
+          <mxGeometry x="930" y="115" width="40" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Benefit boxes -->
+        <mxCell id="b1" value="✅ 无需手写 CUDA&#xa;Python 即可获得 C++ 级性能" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dcfce7;strokeColor=#10B981;strokeWidth=2;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="120" y="200" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b2" value="✅ 跨平台&#xa;Triton 支持 NVIDIA / AMD GPU" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dbeafe;strokeColor=#3b82f6;strokeWidth=2;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="460" y="200" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b3" value="✅ 减少 CUDA 绑定&#xa;框架层自动生成最优 kernel" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fef9c3;strokeColor=#854d0e;strokeWidth=2;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="800" y="200" width="260" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Insight -->
+        <mxCell id="insight" value="关键洞察：torch.compile + Triton 让 PyTorch 不再强依赖 CUDA 库层，&#xa;开发者用纯 Python 即可生成接近手写 CUDA 的 GPU kernel" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fef9c3;strokeColor=#f59e0b;strokeWidth=2;fontSize=13;fontStyle=2;align=center;" vertex="1" parent="1">
+          <mxGeometry x="120" y="290" width="940" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- Performance comparison -->
+        <mxCell id="perf_title" value="性能对比 (GPT-2 推理, A100 GPU)" style="text;html=1;align=center;fontSize=14;fontStyle=1;fontColor=#1e293b;" vertex="1" parent="1">
+          <mxGeometry x="350" y="345" width="300" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="perf1" value="Eager (PyTorch 1.x)&#xa;1.0x baseline" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f1f5f9;strokeColor=#64748b;strokeWidth=2;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="200" y="370" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="perf2" value="torch.compile&#xa;1.5x - 1.8x 加速" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d1fae5;strokeColor=#10B981;strokeWidth=2;fontSize=12;align=center;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="370" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="perf3" value="手写 CUDA kernel&#xa;1.8x - 2.0x 加速" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dbeafe;strokeColor=#3b82f6;strokeWidth=2;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="800" y="370" width="200" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Source -->
+        <mxCell id="source" value="来源：PyTorch 2.0 Official Blog / Triton Language Documentation / NVIDIA PTX ISA" style="text;html=1;align=left;fontSize=11;fontColor=#94a3b8;" vertex="1" parent="1">
+          <mxGeometry x="120" y="440" width="700" height="20" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

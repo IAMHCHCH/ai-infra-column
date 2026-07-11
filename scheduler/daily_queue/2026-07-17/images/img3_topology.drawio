@@ -1,0 +1,156 @@
+<mxfile host="app.diagrams.net" modified="2026-07-11T03:00:00.000Z" agent="AIInfraColumn" version="24.0.0" type="device">
+  <diagram name="AI芯片架构对比" id="arch-compare">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Title -->
+        <mxCell id="title" value="AI 芯片架构定位对比：GPU vs NPU vs TPU vs DPU" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#1e293b;" vertex="1" parent="1">
+          <mxGeometry x="300" y="20" width="1000" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="subtitle" value="按架构类型 · 计算范式 · 典型场景 · 代表产品分类" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontColor=#64748b;" vertex="1" parent="1">
+          <mxGeometry x="400" y="70" width="800" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- Header Row -->
+        <mxCell id="h0" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1e293b;strokeColor=#1e293b;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="40" y="120" width="160" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="h1" value="GPU&#xa;（通用并行）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1e293b;strokeColor=#1e293b;fontColor=#76b900;fontStyle=1;fontSize=15;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="220" y="120" width="300" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="h2" value="NPU&#xa;（神经网络专用）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1e293b;strokeColor=#1e293b;fontColor=#ec4899;fontStyle=1;fontSize=15;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="540" y="120" width="300" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="h3" value="TPU&#xa;（张量处理）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1e293b;strokeColor=#1e293b;fontColor=#4285f4;fontStyle=1;fontSize=15;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="860" y="120" width="300" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="h4" value="DPU&#xa;（数据处理）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1e293b;strokeColor=#1e293b;fontColor=#ff9900;fontStyle=1;fontSize=15;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="120" width="300" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- Row 1: 计算范式 -->
+        <mxCell id="r1h" value="计算范式" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f1f5f9;strokeColor=#cbd5e1;fontStyle=1;fontSize=13;fontColor=#334155;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="40" y="190" width="160" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="r1c1" value="SIMT 大规模线程并行&#xa;CUDA / ROCm 生态" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0fdf4;strokeColor=#76b900;fontSize=13;fontColor=#1e293b;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="220" y="190" width="300" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="r1c2" value="脉动阵列 / 矩阵引擎&#xa;针对 NN 算子硬件化" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fdf2f8;strokeColor=#ec4899;fontSize=13;fontColor=#1e293b;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="540" y="190" width="300" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="r1c3" value="Systolic Array&#xa;专为矩阵乘法优化" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#4285f4;fontSize=13;fontColor=#1e293b;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="860" y="190" width="300" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="r1c4" value="数据通路卸载&#xa;网络/存储/安全加速" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff7ed;strokeColor=#ff9900;fontSize=13;fontColor=#1e293b;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="190" width="300" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Row 2: 核心优势 -->
+        <mxCell id="r2h" value="核心优势" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f1f5f9;strokeColor=#cbd5e1;fontStyle=1;fontSize=13;fontColor=#334155;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="40" y="270" width="160" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="r2c1" value="生态最成熟&#xa;通用性最强&#xa;FP64/FP32/FP16/INT8" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0fdf4;strokeColor=#76b900;fontSize=13;fontColor=#1e293b;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="220" y="270" width="300" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="r2c2" value="能效比极高&#xa;推理吞吐量大&#xa;算子级硬件优化" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fdf2f8;strokeColor=#ec4899;fontSize=13;fontColor=#1e293b;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="540" y="270" width="300" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="r2c3" value="大规模训练优化&#xa;与 JAX/XLA 深度集成&#xa;OCS 光互联" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#4285f4;fontSize=13;fontColor=#1e293b;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="860" y="270" width="300" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="r2c4" value="释放 CPU 开销&#xa;云基础设施加速&#xa;NVMe/网络卸载" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff7ed;strokeColor=#ff9900;fontSize=13;fontColor=#1e293b;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="270" width="300" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Row 3: 典型场景 -->
+        <mxCell id="r3h" value="典型场景" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f1f5f9;strokeColor=#cbd5e1;fontStyle=1;fontSize=13;fontColor=#334155;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="40" y="350" width="160" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="r3c1" value="大模型训练 / 微调&#xa;科学计算 / 图形渲染" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0fdf4;strokeColor=#76b900;fontSize=13;fontColor=#1e293b;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="220" y="350" width="300" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="r3c2" value="端侧推理 / 边缘部署&#xa;低功耗 AI 场景" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fdf2f8;strokeColor=#ec4899;fontSize=13;fontColor=#1e293b;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="540" y="350" width="300" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="r3c3" value="超大规模训练集群&#xa;Google 内部 + GCP" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#4285f4;fontSize=13;fontColor=#1e293b;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="860" y="350" width="300" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="r3c4" value="云数据中心&#xa;网络/存储加速" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff7ed;strokeColor=#ff9900;fontSize=13;fontColor=#1e293b;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="350" width="300" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Row 4: 代表产品 -->
+        <mxCell id="r4h" value="代表产品" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f1f5f9;strokeColor=#cbd5e1;fontStyle=1;fontSize=13;fontColor=#334155;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="40" y="430" width="160" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="r4c1" value="NVIDIA H100/B200&#xa;AMD MI300X&#xa;Intel Gaudi 3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0fdf4;strokeColor=#76b900;fontSize=13;fontColor=#1e293b;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="220" y="430" width="300" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="r4c2" value="昇腾 910B&#xa;Intel Core Ultra NPU&#xa;Qualcomm Hexagon" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fdf2f8;strokeColor=#ec4899;fontSize=13;fontColor=#1e293b;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="540" y="430" width="300" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="r4c3" value="Google TPU v5p&#xa;TPU v6 (Trillium)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#4285f4;fontSize=13;fontColor=#1e293b;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="860" y="430" width="300" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="r4c4" value="NVIDIA BlueField-3&#xa;AWS Nitro&#xa;鲲鹏 DPU" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff7ed;strokeColor=#ff9900;fontSize=13;fontColor=#1e293b;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="430" width="300" height="70" as="geometry"/>
+        </mxCell>
+
+        <!-- Row 5: 编程模型 -->
+        <mxCell id="r5h" value="编程模型" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f1f5f9;strokeColor=#cbd5e1;fontStyle=1;fontSize=13;fontColor=#334155;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="40" y="520" width="160" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="r5c1" value="CUDA / HIP / SYCL&#xa;OpenAI Triton" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0fdf4;strokeColor=#76b900;fontSize=13;fontColor=#1e293b;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="220" y="520" width="300" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="r5c2" value="CANN / OpenVINO&#xa;厂商 SDK" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fdf2f8;strokeColor=#ec4899;fontSize=13;fontColor=#1e293b;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="540" y="520" width="300" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="r5c3" value="JAX / XLA&#xa;PyTorch/XLA" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#4285f4;fontSize=13;fontColor=#1e293b;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="860" y="520" width="300" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="r5c4" value="DOCA / SPDK&#xa;厂商驱动 API" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff7ed;strokeColor=#ff9900;fontSize=13;fontColor=#1e293b;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="520" width="300" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Row 6: 能效特征 -->
+        <mxCell id="r6h" value="能效特征" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f1f5f9;strokeColor=#cbd5e1;fontStyle=1;fontSize=13;fontColor=#334155;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="40" y="600" width="160" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="r6c1" value="通用性高但功耗大&#xa;H100: ~700W TDP" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0fdf4;strokeColor=#76b900;fontSize=13;fontColor=#1e293b;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="220" y="600" width="300" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="r6c2" value="TOPS/W 领先&#xa;边缘推理最优" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fdf2f8;strokeColor=#ec4899;fontSize=13;fontColor=#1e293b;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="540" y="600" width="300" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="r6c3" value="大规模集群能效优&#xa;TPU Pod 级互联" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#4285f4;fontSize=13;fontColor=#1e293b;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="860" y="600" width="300" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="r6c4" value="卸载效率高&#xa;降低 CPU 功耗" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff7ed;strokeColor=#ff9900;fontSize=13;fontColor=#1e293b;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="600" width="300" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Footer -->
+        <mxCell id="footer" value="数据来源：MLPerf 4.1 Benchmark / 各厂商公开技术规格 · 2026.07" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#64748b;" vertex="1" parent="1">
+          <mxGeometry x="400" y="700" width="800" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- Legend -->
+        <mxCell id="leg1" value="GPU = 通用并行" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0fdf4;strokeColor=#76b900;fontSize=11;fontColor=#334155;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="40" y="700" width="140" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg2" value="NPU = NN 专用" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fdf2f8;strokeColor=#ec4899;fontSize=11;fontColor=#334155;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="190" y="700" width="140" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg3" value="TPU = 张量" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#4285f4;fontSize=11;fontColor=#334155;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1340" y="700" width="140" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg4" value="DPU = 数据通路" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff7ed;strokeColor=#ff9900;fontSize=11;fontColor=#334155;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1490" y="700" width="140" height="30" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

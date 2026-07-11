@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="drawio-skill" version="21.0.0" type="device">
+  <diagram name="CudaStack" id="diag-cuda-1">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="500" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="title" value="CUDA 软件栈分层架构" style="text;html=1;align=center;fontSize=22;fontStyle=1;fontColor=#1e293b;" vertex="1" parent="1">
+          <mxGeometry x="350" y="10" width="500" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Layer 1: Application -->
+        <mxCell id="layer1" value="Application Layer&#xa;Megatron-LM · DeepSpeed · vLLM · LangGraph" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fed7aa;strokeColor=#c2410c;strokeWidth=2;fontSize=14;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="200" y="60" width="800" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Layer 2: Framework -->
+        <mxCell id="layer2" value="Framework Layer&#xa;PyTorch 2.0 · TensorFlow · JAX" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dcfce7;strokeColor=#166534;strokeWidth=2;fontSize=14;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="200" y="130" width="800" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Layer 3: torch.compile / Triton -->
+        <mxCell id="layer3" value="Compiler Layer&#xa;torch.compile → Triton / Inductor → PTX" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fef9c3;strokeColor=#854d0e;strokeWidth=2;fontSize=14;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="200" y="200" width="800" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Layer 4: CUDA Libraries -->
+        <mxCell id="layer4" value="CUDA Libraries" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d1fae5;strokeColor=#10B981;strokeWidth=2;fontSize=14;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="200" y="270" width="800" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Sub-libraries -->
+        <mxCell id="lib1" value="cuDNN&#xa;深度学习算子" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dbeafe;strokeColor=#3b82f6;strokeWidth=2;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="210" y="340" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lib2" value="cuBLAS&#xa;线性代数" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dbeafe;strokeColor=#3b82f6;strokeWidth=2;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="370" y="340" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lib3" value="NCCL&#xa;多卡通信" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dbeafe;strokeColor=#3b82f6;strokeWidth=2;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="530" y="340" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lib4" value="TensorRT&#xa;推理优化" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dbeafe;strokeColor=#3b82f6;strokeWidth=2;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="690" y="340" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lib5" value="cuFFT&#xa;傅里叶变换" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dbeafe;strokeColor=#3b82f6;strokeWidth=2;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="850" y="340" width="140" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Layer 5: CUDA Runtime -->
+        <mxCell id="layer5" value="CUDA Runtime (cudart) + CUDA Driver API" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dbeafe;strokeColor=#1e40af;strokeWidth=2;fontSize=14;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="200" y="410" width="800" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Layer 6: GPU HW -->
+        <mxCell id="layer6" value="GPU Hardware: NVIDIA H100 (Hopper) · A100 (Ampere) · B200 (Blackwell)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3e8ff;strokeColor=#6b21a8;strokeWidth=2;fontSize=14;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="200" y="460" width="800" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Source -->
+        <mxCell id="source" value="来源：NVIDIA CUDA Toolkit 12.x Documentation" style="text;html=1;align=left;fontSize=11;fontColor=#94a3b8;" vertex="1" parent="1">
+          <mxGeometry x="200" y="500" width="600" height="20" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
