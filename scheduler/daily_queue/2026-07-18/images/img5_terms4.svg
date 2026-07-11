@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="svga-t4-title svga-t4-desc">
+  <title id="svga-t4-title">核心术语卡片 (4/4) + 下周预告</title>
+  <desc id="svga-t4-desc">本周术语回顾 + 下周内容预告</desc>
+
+  <rect x="0" y="0" width="1200" height="500" fill="#111418"/>
+
+  <text x="600" y="35" text-anchor="middle" font-family="Inter, PingFang SC, system-ui, sans-serif" font-size="28" font-weight="700" fill="#F1F5F9">本周术语回顾 + 下周预告</text>
+
+  <!-- 左侧：本周术语脑图 -->
+  <rect x="40" y="70" width="520" height="380" rx="12" fill="#1A1D24" stroke="#3B82F6" stroke-width="2"/>
+  <text x="300" y="105" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="700" fill="#3B82F6">本周 10 大术语</text>
+
+  <rect x="70" y="130" width="140" height="40" rx="20" fill="#0F172A" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="140" y="155" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#3B82F6">NVLink</text>
+
+  <rect x="230" y="130" width="140" height="40" rx="20" fill="#0F172A" stroke="#8B5CF6" stroke-width="1.5"/>
+  <text x="300" y="155" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#8B5CF6">NVSwitch</text>
+
+  <rect x="390" y="130" width="140" height="40" rx="20" fill="#0F172A" stroke="#10B981" stroke-width="1.5"/>
+  <text x="460" y="155" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#10B981">HBM3</text>
+
+  <rect x="70" y="185" width="140" height="40" rx="20" fill="#0F172A" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="140" y="210" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#F59E0B">CUDA</text>
+
+  <rect x="230" y="185" width="140" height="40" rx="20" fill="#0F172A" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="300" y="210" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#F59E0B">ROCm</text>
+
+  <rect x="390" y="185" width="140" height="40" rx="20" fill="#0F172A" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="460" y="210" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#3B82F6">oneAPI</text>
+
+  <rect x="70" y="240" width="140" height="40" rx="20" fill="#0F172A" stroke="#EF4444" stroke-width="1.5"/>
+  <text x="140" y="265" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#EF4444">InfiniBand</text>
+
+  <rect x="230" y="240" width="140" height="40" rx="20" fill="#0F172A" stroke="#10B981" stroke-width="1.5"/>
+  <text x="300" y="265" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#10B981">RoCE v2</text>
+
+  <rect x="390" y="240" width="140" height="40" rx="20" fill="#0F172A" stroke="#8B5CF6" stroke-width="1.5"/>
+  <text x="460" y="265" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#8B5CF6">CXL</text>
+
+  <rect x="70" y="295" width="140" height="40" rx="20" fill="#0F172A" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="140" y="320" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#F59E0B">TCO</text>
+
+  <rect x="230" y="295" width="140" height="40" rx="20" fill="#0F172A" stroke="#10B981" stroke-width="1.5"/>
+  <text x="300" y="320" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#10B981">Agent Infra</text>
+
+  <rect x="390" y="295" width="140" height="40" rx="20" fill="#0F172A" stroke="#EF4444" stroke-width="1.5"/>
+  <text x="460" y="320" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#EF4444">Continuous Batching</text>
+
+  <text x="300" y="380" text-anchor="middle" font-family="PingFang SC, system-ui, sans-serif" font-size="14" fill="#64748B">掌握这些术语，AI Infra 入门 80% 完成</text>
+
+  <!-- 右侧：下周预告 -->
+  <rect x="600" y="70" width="560" height="380" rx="12" fill="#1A1D24" stroke="#10B981" stroke-width="2"/>
+  <text x="880" y="105" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="700" fill="#10B981">📅 下周预告</text>
+
+  <rect x="630" y="130" width="500" height="50" rx="8" fill="#0F172A" stroke="#3B82F6" stroke-width="1"/>
+  <text x="650" y="155" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#3B82F6">周一</text>
+  <text x="700" y="155" font-family="PingFang SC, system-ui, sans-serif" font-size="14" fill="#F1F5F9">推理优化：vLLM + Continuous Batching 原理</text>
+  <text x="650" y="172" font-family="PingFang SC, system-ui, sans-serif" font-size="12" fill="#64748B">PagedAttention 如何让 LLM 推理吞吐翻倍</text>
+
+  <rect x="630" y="195" width="500" height="50" rx="8" fill="#0F172A" stroke="#8B5CF6" stroke-width="1"/>
+  <text x="650" y="220" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#8B5CF6">周二</text>
+  <text x="700" y="220" font-family="PingFang SC, system-ui, sans-serif" font-size="14" fill="#F1F5F9">InfiniBand vs RoCE：AI 集群网络选型</text>
+  <text x="650" y="237" font-family="PingFang SC, system-ui, sans-serif" font-size="12" fill="#64748B">NVIDIA Quantum vs Spectrum-X 深度对比</text>
+
+  <rect x="630" y="260" width="500" height="50" rx="8" fill="#0F172A" stroke="#10B981" stroke-width="1"/>
+  <text x="650" y="285" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#10B981">周三</text>
+  <text x="700" y="285" font-family="PingFang SC, system-ui, sans-serif" font-size="14" fill="#F1F5F9">TensorRT-LLM：NVIDIA 推理加速利器</text>
+  <text x="650" y="302" font-family="PingFang SC, system-ui, sans-serif" font-size="12" fill="#64748B">FP8 量化 + Kernel Fusion 实测性能</text>
+
+  <rect x="630" y="325" width="500" height="50" rx="8" fill="#0F172A" stroke="#F59E0B" stroke-width="1"/>
+  <text x="650" y="350" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#F59E0B">周四</text>
+  <text x="700" y="350" font-family="PingFang SC, system-ui, sans-serif" font-size="14" fill="#F1F5F9">Megatron-LM 并行策略全解析</text>
+  <text x="650" y="367" font-family="PingFang SC, system-ui, sans-serif" font-size="12" fill="#64748B">TP/PP/DP 三维并行如何训练千亿模型</text>
+
+  <rect x="630" y="390" width="500" height="50" rx="8" fill="#0F172A" stroke="#EF4444" stroke-width="1"/>
+  <text x="650" y="415" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#EF4444">周五</text>
+  <text x="700" y="415" font-family="PingFang SC, system-ui, sans-serif" font-size="14" fill="#F1F5F9">云原生 AI Infra：K8s + Volcano 调度</text>
+  <text x="650" y="432" font-family="PingFang SC, system-ui, sans-serif" font-size="12" fill="#64748B">GPU 共享与弹性调度实践</text>
+</svg>

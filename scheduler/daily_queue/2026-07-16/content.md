@@ -7,7 +7,7 @@ tags: #AIInfra #GPU编程 #高性能计算 #CUDA #ROCm
 📌 **标题**：CUDA 护城河有多深？
 
 💡 AMD 硬件追上了，为什么 NVIDIA 还是赢？
-🎯 CUDA 不只是编程语言，而是 cuDNN+cuBLAS+NCCL+TensorRT 的完整生态，15年开发者积累形成锁定效应。
+🎯 CUDA 不只是编程语言，而是 cuDNN+cuBLAS+NCCL+TensorRT 的完整生态，近20年开发者生态积累形成锁定效应。
 👀 CUDA vs ROCm vs oneAPI 生态对比矩阵 ⬅️
 
 📸 **配图索引**：

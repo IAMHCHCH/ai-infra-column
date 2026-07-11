@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="svga-t3-title svga-t3-desc">
+  <title id="svga-t3-title">核心术语卡片 (3/4)</title>
+  <desc id="svga-t3-desc">CXL, TCO, Agent Infra, Continuous Batching 术语</desc>
+
+  <rect x="0" y="0" width="1200" height="500" fill="#111418"/>
+
+  <text x="600" y="35" text-anchor="middle" font-family="Inter, PingFang SC, system-ui, sans-serif" font-size="28" font-weight="700" fill="#F1F5F9">AI Infra 核心术语卡片 (3/4)</text>
+
+  <rect x="40" y="70" width="270" height="180" rx="12" fill="#1A1D24" stroke="#8B5CF6" stroke-width="2"/>
+  <rect x="40" y="70" width="270" height="4" rx="2" fill="#8B5CF6"/>
+  <text x="60" y="105" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="700" fill="#8B5CF6">CXL</text>
+  <text x="60" y="135" font-family="PingFang SC, system-ui, sans-serif" font-size="16" fill="#F1F5F9">Compute Express Link</text>
+  <text x="60" y="165" font-family="PingFang SC, system-ui, sans-serif" font-size="14" fill="#94A3B8">CPU-GPU 内存一致性总线，</text>
+  <text x="60" y="190" font-family="PingFang SC, system-ui, sans-serif" font-size="14" fill="#94A3B8">CXL 3.0 支持内存池化。</text>
+  <text x="60" y="215" font-family="PingFang SC, system-ui, sans-serif" font-size="14" fill="#94A3B8">PCIe 5.0 物理层基础，</text>
+  <text x="60" y="240" font-family="PingFang SC, system-ui, sans-serif" font-size="14" fill="#94A3B8">带宽 128 GB/s。</text>
+
+  <rect x="330" y="70" width="270" height="180" rx="12" fill="#1A1D24" stroke="#F59E0B" stroke-width="2"/>
+  <rect x="330" y="70" width="270" height="4" rx="2" fill="#F59E0B"/>
+  <text x="350" y="105" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="700" fill="#F59E0B">TCO</text>
+  <text x="350" y="135" font-family="PingFang SC, system-ui, sans-serif" font-size="16" fill="#F1F5F9">总拥有成本</text>
+  <text x="350" y="165" font-family="PingFang SC, system-ui, sans-serif" font-size="14" fill="#94A3B8">= 硬件采购 + 电费 + </text>
+  <text x="350" y="190" font-family="PingFang SC, system-ui, sans-serif" font-size="14" fill="#94A3B8">运维 + 数据中心折旧。</text>
+  <text x="350" y="215" font-family="PingFang SC, system-ui, sans-serif" font-size="14" fill="#94A3B8">GPU 功耗 700W，电费</text>
+  <text x="350" y="240" font-family="PingFang SC, system-ui, sans-serif" font-size="14" fill="#94A3B8">占比可达 40%+。</text>
+
+  <rect x="620" y="70" width="270" height="180" rx="12" fill="#1A1D24" stroke="#10B981" stroke-width="2"/>
+  <rect x="620" y="70" width="270" height="4" rx="2" fill="#10B981"/>
+  <text x="640" y="105" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="700" fill="#10B981">Agent Infra</text>
+  <text x="640" y="135" font-family="PingFang SC, system-ui, sans-serif" font-size="16" fill="#F1F5F9">智能体编排基础设施</text>
+  <text x="640" y="165" font-family="PingFang SC, system-ui, sans-serif" font-size="14" fill="#94A3B8">LangChain/LangGraph 为</text>
+  <text x="640" y="190" font-family="PingFang SC, system-ui, sans-serif" font-size="14" fill="#94A3B8">代表，管理多 Agent 协作、</text>
+  <text x="640" y="215" font-family="PingFang SC, system-ui, sans-serif" font-size="14" fill="#94A3B8">工具调用、记忆和状态。</text>
+  <text x="640" y="240" font-family="PingFang SC, system-ui, sans-serif" font-size="14" fill="#94A3B8">推理之上的新层。</text>
+
+  <rect x="910" y="70" width="270" height="180" rx="12" fill="#1A1D24" stroke="#EF4444" stroke-width="2"/>
+  <rect x="910" y="70" width="270" height="4" rx="2" fill="#EF4444"/>
+  <text x="930" y="105" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700" fill="#EF4444">Continuous</text>
+  <text x="930" y="125" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700" fill="#EF4444">Batching</text>
+  <text x="930" y="155" font-family="PingFang SC, system-ui, sans-serif" font-size="16" fill="#F1F5F9">连续批处理</text>
+  <text x="930" y="180" font-family="PingFang SC, system-ui, sans-serif" font-size="14" fill="#94A3B8">推理请求动态组批，</text>
+  <text x="930" y="205" font-family="PingFang SC, system-ui, sans-serif" font-size="14" fill="#94A3B8">无需等齐。vLLM 核心技</text>
+  <text x="930" y="230" font-family="PingFang SC, system-ui, sans-serif" font-size="14" fill="#94A3B8">术，吞吐量提升 2-4x。</text>
+
+  <text x="600" y="320" text-anchor="middle" font-family="PingFang SC, system-ui, sans-serif" font-size="16" fill="#64748B">→ 以上术语在下周内容中将逐一深入展开</text>
+
+  <rect x="200" y="350" width="800" height="60" rx="8" fill="#1A1D24" stroke="#2A2D35" stroke-width="1"/>
+  <text x="600" y="380" text-anchor="middle" font-family="PingFang SC, system-ui, sans-serif" font-size="16" fill="#94A3B8">术语表持续更新中 | 关注专栏不迷路</text>
+  <text x="600" y="400" text-anchor="middle" font-family="PingFang SC, system-ui, sans-serif" font-size="12" fill="#475569">数据来源：NVIDIA/AMD/Intel 官方文档 · LangChain Documentation · vLLM GitHub</text>
+</svg>

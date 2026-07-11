@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="svga-t2-title svga-t2-desc">
+  <title id="svga-t2-title">核心术语卡片 (2/4)</title>
+  <desc id="svga-t2-desc">ROCm, oneAPI, InfiniBand, RoCE 术语解释</desc>
+
+  <rect x="0" y="0" width="1200" height="500" fill="#111418"/>
+
+  <text x="600" y="35" text-anchor="middle" font-family="Inter, PingFang SC, system-ui, sans-serif" font-size="28" font-weight="700" fill="#F1F5F9">AI Infra 核心术语卡片 (2/4)</text>
+
+  <rect x="40" y="70" width="270" height="180" rx="12" fill="#1A1D24" stroke="#F59E0B" stroke-width="2"/>
+  <rect x="40" y="70" width="270" height="4" rx="2" fill="#F59E0B"/>
+  <text x="60" y="105" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="700" fill="#F59E0B">ROCm</text>
+  <text x="60" y="135" font-family="PingFang SC, system-ui, sans-serif" font-size="16" fill="#F1F5F9">AMD 开源 GPU 计算平台</text>
+  <text x="60" y="165" font-family="PingFang SC, system-ui, sans-serif" font-size="14" fill="#94A3B8">对标 CUDA，含 MIOpen/</text>
+  <text x="60" y="190" font-family="PingFang SC, system-ui, sans-serif" font-size="14" fill="#94A3B8">rocBLAS/RCCL 等库。</text>
+  <text x="60" y="215" font-family="PingFang SC, system-ui, sans-serif" font-size="14" fill="#94A3B8">PyTorch 2.0+ 原生支持。</text>
+  <text x="60" y="240" font-family="PingFang SC, system-ui, sans-serif" font-size="14" fill="#94A3B8">开发者约 50 万。</text>
+
+  <rect x="330" y="70" width="270" height="180" rx="12" fill="#1A1D24" stroke="#3B82F6" stroke-width="2"/>
+  <rect x="330" y="70" width="270" height="4" rx="2" fill="#3B82F6"/>
+  <text x="350" y="105" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="700" fill="#3B82F6">oneAPI</text>
+  <text x="350" y="135" font-family="PingFang SC, system-ui, sans-serif" font-size="16" fill="#F1F5F9">Intel 跨架构编程模型</text>
+  <text x="350" y="165" font-family="PingFang SC, system-ui, sans-serif" font-size="14" fill="#94A3B8">基于 SYCL，一套代码</text>
+  <text x="350" y="190" font-family="PingFang SC, system-ui, sans-serif" font-size="14" fill="#94A3B8">跑 CPU/GPU/FPGA。</text>
+  <text x="350" y="215" font-family="PingFang SC, system-ui, sans-serif" font-size="14" fill="#94A3B8">Gaudi3 加速器主力</text>
+  <text x="350" y="240" font-family="PingFang SC, system-ui, sans-serif" font-size="14" fill="#94A3B8">软件栈。</text>
+
+  <rect x="620" y="70" width="270" height="180" rx="12" fill="#1A1D24" stroke="#EF4444" stroke-width="2"/>
+  <rect x="620" y="70" width="270" height="4" rx="2" fill="#EF4444"/>
+  <text x="640" y="105" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="700" fill="#EF4444">InfiniBand</text>
+  <text x="640" y="135" font-family="PingFang SC, system-ui, sans-serif" font-size="16" fill="#F1F5F9">高性能 RDMA 网络</text>
+  <text x="640" y="165" font-family="PingFang SC, system-ui, sans-serif" font-size="14" fill="#94A3B8">NVIDIA Quantum 系列，</text>
+  <text x="640" y="190" font-family="PingFang SC, system-ui, sans-serif" font-size="14" fill="#94A3B8">NDR 400Gbps。超低延迟</text>
+  <text x="640" y="215" font-family="PingFang SC, system-ui, sans-serif" font-size="14" fill="#94A3B8">~1μs，AI 集群首选</text>
+  <text x="640" y="240" font-family="PingFang SC, system-ui, sans-serif" font-size="14" fill="#94A3B8">互联网络。</text>
+
+  <rect x="910" y="70" width="270" height="180" rx="12" fill="#1A1D24" stroke="#10B981" stroke-width="2"/>
+  <rect x="910" y="70" width="270" height="4" rx="2" fill="#10B981"/>
+  <text x="930" y="105" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="700" fill="#10B981">RoCE v2</text>
+  <text x="930" y="135" font-family="PingFang SC, system-ui, sans-serif" font-size="16" fill="#F1F5F9">RDMA over Ethernet</text>
+  <text x="930" y="165" font-family="PingFang SC, system-ui, sans-serif" font-size="14" fill="#94A3B8">在以太网上实现 RDMA，</text>
+  <text x="930" y="190" font-family="PingFang SC, system-ui, sans-serif" font-size="14" fill="#94A3B8">成本低于 IB。NVIDIA</text>
+  <text x="930" y="215" font-family="PingFang SC, system-ui, sans-serif" font-size="14" fill="#94A3B8">Spectrum-X 为代表方案。</text>
+  <text x="930" y="240" font-family="PingFang SC, system-ui, sans-serif" font-size="14" fill="#94A3B8">与 IB 形成互补。</text>
+
+  <line x1="40" y1="290" x2="1160" y2="290" stroke="#2A2D35" stroke-width="1"/>
+
+  <text x="600" y="320" text-anchor="middle" font-family="Inter, PingFang SC, system-ui, sans-serif" font-size="22" font-weight="700" fill="#F1F5F9">📚 本周必读论文</text>
+
+  <rect x="40" y="340" width="360" height="60" rx="8" fill="#1A1D24" stroke="#3B82F6" stroke-width="1"/>
+  <text x="60" y="365" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#3B82F6">[1] NVIDIA Hopper Whitepaper</text>
+  <text x="60" y="385" font-family="PingFang SC, system-ui, sans-serif" font-size="13" fill="#94A3B8">H100 架构全解析：Transformer Engine + FP8</text>
+
+  <rect x="420" y="340" width="360" height="60" rx="8" fill="#1A1D24" stroke="#8B5CF6" stroke-width="1"/>
+  <text x="440" y="365" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#8B5CF6">[2] AMD MI300X Whitepaper</text>
+  <text x="440" y="385" font-family="PingFang SC, system-ui, sans-serif" font-size="13" fill="#94A3B8">192GB HBM3 + CDNA3 架构详解</text>
+
+  <rect x="800" y="340" width="360" height="60" rx="8" fill="#1A1D24" stroke="#10B981" stroke-width="1"/>
+  <text x="820" y="365" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#10B981">[3] MLPerf Inference v4.0</text>
+  <text x="820" y="385" font-family="PingFang SC, system-ui, sans-serif" font-size="13" fill="#94A3B8">行业基准测试：H100/MI300X/Gaudi3 实测对比</text>
+
+  <text x="600" y="440" text-anchor="middle" font-family="PingFang SC, system-ui, sans-serif" font-size="14" fill="#64748B">下周预告：推理优化（vLLM/Continuous Batching）+ 网络互联（InfiniBand vs RoCE）</text>
+  <text x="600" y="470" text-anchor="middle" font-family="PingFang SC, system-ui, sans-serif" font-size="12" fill="#475569">数据来源：NVIDIA/AMD/Intel 官方白皮书 · MLPerf 基准榜单</text>
+</svg>
