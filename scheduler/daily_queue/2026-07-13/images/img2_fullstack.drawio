@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="drawio-skill" version="21.0.0" type="device">
+  <diagram name="FullStack" id="diag-fs-1">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="700" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="AI Infra 四层全景定位图" style="text;html=1;align=center;fontSize=24;fontStyle=1;fontColor=#1e293b;" vertex="1" parent="1">
+          <mxGeometry x="350" y="10" width="500" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Layer 1: Hardware -->
+        <mxCell id="hw_zone" value="Hardware 硬件层" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dbeafe;strokeColor=#1e40af;strokeWidth=2;verticalAlign=top;fontSize=18;fontStyle=1;fontColor=#1e40af;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="60" y="60" width="1080" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="hw1" value="GPU&#xa;NVIDIA H100&#xa;AMD MI300X" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#93c5fd;strokeColor=#1e40af;strokeWidth=2;fontSize=13;align=center;" vertex="1" parent="1">
+          <mxGeometry x="90" y="100" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="hw2" value="CPU&#xa;Intel Xeon 6&#xa;AMD Genoa" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#93c5fd;strokeColor=#1e40af;strokeWidth=2;fontSize=13;align=center;" vertex="1" parent="1">
+          <mxGeometry x="300" y="100" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="hw3" value="NPU / DSA&#xa;Google TPU v5p&#xa;Intel Gaudi3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#93c5fd;strokeColor=#1e40af;strokeWidth=2;fontSize=13;align=center;" vertex="1" parent="1">
+          <mxGeometry x="510" y="100" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="hw4" value="DPU&#xa;NVIDIA BlueField-3&#xa;AMD Pensando" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#93c5fd;strokeColor=#1e40af;strokeWidth=2;fontSize=13;align=center;" vertex="1" parent="1">
+          <mxGeometry x="720" y="100" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="hw5" value="HBM3 / 3e&#xa;SK Hynix&#xa;Samsung" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#93c5fd;strokeColor=#1e40af;strokeWidth=2;fontSize=13;align=center;" vertex="1" parent="1">
+          <mxGeometry x="930" y="100" width="180" height="90" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow 1 -->
+        <mxCell id="a1" value="" style="endArrow=arrow;html=1;strokeColor=#475569;strokeWidth=2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="210" as="sourcePoint" />
+            <mxPoint x="600" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Layer 2: Network -->
+        <mxCell id="net_zone" value="Network 网络层 — InfiniBand / RoCE / NVLink / CXL" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3e8ff;strokeColor=#6b21a8;strokeWidth=2;verticalAlign=top;fontSize=18;fontStyle=1;fontColor=#6b21a8;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="60" y="240" width="1080" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="n1" value="InfiniBand NDR&#xa;400 Gbps" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d8b4fe;strokeColor=#6b21a8;strokeWidth=2;fontSize=13;align=center;" vertex="1" parent="1">
+          <mxGeometry x="90" y="280" width="220" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="RoCE v2&#xa;NVIDIA Spectrum-X" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d8b4fe;strokeColor=#6b21a8;strokeWidth=2;fontSize=13;align=center;" vertex="1" parent="1">
+          <mxGeometry x="340" y="280" width="220" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" value="NVLink 4.0&#xa;900 GB/s" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d8b4fe;strokeColor=#6b21a8;strokeWidth=2;fontSize=13;align=center;" vertex="1" parent="1">
+          <mxGeometry x="590" y="280" width="220" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" value="CXL 3.0 / PCIe 5.0&#xa;128 GB/s" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d8b4fe;strokeColor=#6b21a8;strokeWidth=2;fontSize=13;align=center;" vertex="1" parent="1">
+          <mxGeometry x="840" y="280" width="220" height="55" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow 2 -->
+        <mxCell id="a2" value="" style="endArrow=arrow;html=1;strokeColor=#475569;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="350" as="sourcePoint" />
+            <mxPoint x="600" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Layer 3: Software -->
+        <mxCell id="sw_zone" value="Software 软件栈 — CUDA / ROCm / oneAPI / PyTorch" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dcfce7;strokeColor=#166534;strokeWidth=2;verticalAlign=top;fontSize=18;fontStyle=1;fontColor=#166534;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="60" y="380" width="1080" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="s1" value="CUDA 12.x&#xa;cuDNN / cuBLAS / NCCL" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#86efac;strokeColor=#166534;strokeWidth=2;fontSize=13;align=center;" vertex="1" parent="1">
+          <mxGeometry x="90" y="420" width="240" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="s2" value="ROCm 6.0&#xa;MIOpen / rocBLAS / RCCL" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#86efac;strokeColor=#166534;strokeWidth=2;fontSize=13;align=center;" vertex="1" parent="1">
+          <mxGeometry x="360" y="420" width="240" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="s3" value="oneAPI / SYCL&#xa;oneDNN / oneMKL" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#86efac;strokeColor=#166534;strokeWidth=2;fontSize=13;align=center;" vertex="1" parent="1">
+          <mxGeometry x="630" y="420" width="220" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="s4" value="PyTorch 2.0&#xa;TensorRT-LLM / vLLM" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#86efac;strokeColor=#166534;strokeWidth=2;fontSize=13;align=center;" vertex="1" parent="1">
+          <mxGeometry x="880" y="420" width="220" height="55" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow 3 -->
+        <mxCell id="a3" value="" style="endArrow=arrow;html=1;strokeColor=#475569;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="490" as="sourcePoint" />
+            <mxPoint x="600" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Layer 4: Application -->
+        <mxCell id="app_zone" value="Application 应用层 — LLM 训练 / 推理 / Agent 编排" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fed7aa;strokeColor=#c2410c;strokeWidth=2;verticalAlign=top;fontSize=18;fontStyle=1;fontColor=#c2410c;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="60" y="520" width="1080" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="app1" value="Megatron-LM&#xa;(分布式训练)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fdba74;strokeColor=#c2410c;strokeWidth=2;fontSize=13;align=center;" vertex="1" parent="1">
+          <mxGeometry x="120" y="555" width="200" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="app2" value="vLLM&#xa;(推理服务)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fdba74;strokeColor=#c2410c;strokeWidth=2;fontSize=13;align=center;" vertex="1" parent="1">
+          <mxGeometry x="400" y="555" width="200" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="app3" value="LangGraph&#xa;(Agent 编排)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fdba74;strokeColor=#c2410c;strokeWidth=2;fontSize=13;align=center;" vertex="1" parent="1">
+          <mxGeometry x="680" y="555" width="200" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="app4" value="TensorRT-LLM&#xa;(推理加速)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fdba74;strokeColor=#c2410c;strokeWidth=2;fontSize=13;align=center;" vertex="1" parent="1">
+          <mxGeometry x="960" y="555" width="160" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- Source -->
+        <mxCell id="source" value="来源：NVIDIA / AMD / Intel 官方产品文档" style="text;html=1;align=left;fontSize=11;fontColor=#94a3b8;" vertex="1" parent="1">
+          <mxGeometry x="60" y="630" width="400" height="20" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
