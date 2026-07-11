@@ -14,3 +14,5 @@ tags: #AIInfra #GPU编程 #高性能计算 #AIInfra入门
 图1：封面 | 图2：AI Infra 四层全景定位图 | 图3：从CPU到超异构范式演进 | 图4：全球AI基础设施市场规模预测 | 图5：NVIDIA DGX SuperPOD 集群架构
 
 💬 你觉得 AI Infra 哪一层最关键？评论区聊聊 👇
+
+#AIInfra #GPU编程 #高性能计算 #AIInfra入门

@@ -14,3 +14,5 @@ tags: #AIInfra #GPU编程 #高性能计算 #论文推荐
 图1：封面 | 图2-5：术语卡片（NVLink/NVSwitch/HBM3/CUDA/ROCm/oneAPI/RoCE/InfiniBand/TCO/Agent Infra）
 
 💬 下周想深入哪个方向？投票决定 👇
+
+#AIInfra #GPU编程 #高性能计算 #论文推荐
