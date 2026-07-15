@@ -51,16 +51,16 @@
 
         <!-- Labels on arrows -->
         <mxCell id="l1" value="编译" style="text;html=1;align=center;fontSize=11;fontColor=#64748b;" vertex="1" parent="1">
-          <mxGeometry x="250" y="115" width="40" height="20" as="geometry" />
+          <mxGeometry x="235" y="155" width="40" height="20" as="geometry" />
         </mxCell>
         <mxCell id="l2" value="图追踪" style="text;html=1;align=center;fontSize=11;fontColor=#64748b;" vertex="1" parent="1">
-          <mxGeometry x="470" y="115" width="50" height="20" as="geometry" />
+          <mxGeometry x="465" y="155" width="50" height="20" as="geometry" />
         </mxCell>
         <mxCell id="l3" value="代码生成" style="text;html=1;align=center;fontSize=11;fontColor=#64748b;" vertex="1" parent="1">
-          <mxGeometry x="700" y="115" width="60" height="20" as="geometry" />
+          <mxGeometry x="695" y="155" width="60" height="20" as="geometry" />
         </mxCell>
         <mxCell id="l4" value="汇编" style="text;html=1;align=center;fontSize=11;fontColor=#64748b;" vertex="1" parent="1">
-          <mxGeometry x="930" y="115" width="40" height="20" as="geometry" />
+          <mxGeometry x="935" y="155" width="40" height="20" as="geometry" />
         </mxCell>
 
         <!-- Benefit boxes -->
@@ -81,7 +81,7 @@
 
         <!-- Performance comparison -->
         <mxCell id="perf_title" value="性能对比 (GPT-2 推理, A100 GPU)" style="text;html=1;align=center;fontSize=14;fontStyle=1;fontColor=#1e293b;" vertex="1" parent="1">
-          <mxGeometry x="350" y="345" width="300" height="20" as="geometry" />
+          <mxGeometry x="400" y="345" width="400" height="20" as="geometry" />
         </mxCell>
         <mxCell id="perf1" value="Eager (PyTorch 1.x)&#xa;1.0x baseline" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f1f5f9;strokeColor=#64748b;strokeWidth=2;fontSize=12;align=center;" vertex="1" parent="1">
           <mxGeometry x="200" y="370" width="200" height="50" as="geometry" />
